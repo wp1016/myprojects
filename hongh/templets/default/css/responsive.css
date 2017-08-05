@@ -1,0 +1,589 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/*---------------iPad & Samsung Galaxy Tablets portrait---------------*/
+/*___________________________________________________________________*/
+
+@media screen (min-width: 1200px) {
+    #top1 { margin: 0 auto; max-width: 1170px; }
+    .container { margin: 0 auto; max-width: 1170px; /*Change to any value and the whole template will adjust to it :) */ position: relative; }
+    .sy_new ul li { float: left; width: 45%; height: 30px; overflow: hidden; }
+    .sub_comqi { width: 38%; float: left; padding-right: 3%; border-right: #d8d8d8 1px solid; }
+
+    /*honor*/
+    .honor_s { display: none; }
+    .honor-box { }
+    .sub_menu span { display: none; }
+}
+
+@media screen and (min-width: 979px) and (max-width: 1199px) {
+    body { margin: 0 1%; }
+    #header-links .tel { margin-left: 10px; width: 55%; }
+    .head-wrapp .logo { width: 28%; margin-top: 25px; }
+    #top_right { width: 40%; }
+    .li1, .li0 { width: 100%; }
+    .navul li { width: 12.5%; }
+    .list01 li { width: auto; float: left; }
+    .navul { width: 100%; }
+    .sy_new ul li { width: 44%; height: 30px; overflow: hidden; }
+    .sy_new dd { float: right; width: 65%; }
+    .sub_about ul li { width: 22.9%; float: left; margin-right: 20px; }
+    .right31 { margin-right: 0px; }
+    .cul-nav ul li { width: 110px; margin-right: 40px; }
+    .cul-nav ul { margin-left: 40px; }
+    .sub_comqi { width: 41%; float: left; }
+    .sub_com_capacity { width: 53%; float: right; }
+    .sub_com_capacity_l { display: none; }
+    .sub_com_capacity_r { width: 100%; }
+    .sub_ban .img { /*height: 230px;*/ width: 100%; left: 50%; }
+    .sub_contact_l { width: 100%; float: left; background-image: none; font-size: 20px; padding: 8px 15px 7px; }
+    .sub_contact_r { width: 100%; float: left; }
+    .sub_contact_r .online { float: left; margin-top: 20px; height: 40px; line-height: 40px; }
+    .accordion-heading ul li { height: 50px; }
+    .weizi { display: none; }
+    .proName { width: 100%; }
+    .proName h1 { font-size: 18px; }
+
+    .container, .content, .projects-pro, .projects-container, .iservice, .sub_menu, .prolist_case, .w1170, #main, .prolist-con { width: 100%; }
+    .projects-container { padding-left: 0; }
+    .sub_menu span { display: none; }
+
+    /*logo shiyi*/
+    .pinpai dl { width: 43%; }
+    .pinpai dl dd { width: 77%; }
+    .wenzi { width: 43%; }
+
+    .wenhua dl dd { width: 50%; }
+
+    .l-fc { width: 47%; }
+
+    .peijian ul li { width: 21.66%; }
+    .xswl embed { height: 600px; }
+
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 30%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+    .preview { width: 37%; }
+    .case dl dt { width: 26%; }
+    .case dl dd { width: 71%; }
+    .prolist-con ul li { width: 22%; }
+    .navul li:hover .plist { display: none; }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:978px) {
+    body { margin: 0 1%; }
+    .head-wrapp .logo { width: 100%; }
+    #main-navigation { width: 100%; float: left; margin-left: 5px; border-top: #E4E4E4 1px solid; margin-top: 20px; }
+    .li1, .li0 { width: 100%; }
+    .navul li { width: 12.5%; }
+    .navul { width: 100%; }
+    .head-wrapp { height: 182px; }
+    #header-links { padding: 0 15px; }
+    #header-links .tel { width: 100%; overflow: hidden; }
+    #top_right { display: none; }
+    #main-menu { width: 100%; overflow: hidden; height: 80px; }
+    .content { width: 100%; float: left; }
+    .main-menu li { POSITION: relative; TEXT-ALIGN: center; line-height: 84px; }
+    .sy_new { float: left; width: 53%; margin-right: 0; margin-bottom: 30px; }
+    .sy_new dd { width: 65%; height: 80px; overflow: hidden; }
+    .isv_left { font-size: 25px; }
+    .sy_new ul li { float: left; width: 44%; height: 26px; overflow: hidden; }
+    .sy_sol .con { height: 40px; overflow: hidden; width: 90%; }
+
+    #footer_feilei { width: 100%; padding: 010px; }
+    #footer_feilei li { float: left; margin-bottom: 20px; }
+    .fenleia1 a { margin: 0px 8px; }
+    .fenleia1 .tel { font-size: 16px; }
+    .fenleia1 .tuku, .fenleia1 .message { width: 100px; }
+    .fenleia1 { width: 34%; color: #999999; margin-top: 10px; }
+    .fenleia2, .fenleia3, .fenleia4, .fenleia5 { width: 13%; background: url(../images/right_x.gif) no-repeat 120px bottom; }
+
+    #container { width: 100%; }
+    .container, .content, .projects-pro, .projects-container, .iservice, .sub_menu, .prolist_case, .w1170, #main, .prolist-con { width: 100%; }
+    .projects-container { padding-left: 0; }
+
+    ul#portfolio-container.two-columns li { width: 47.88%; }
+    ul#portfolio-container .flex-control-nav li, .blog-post .flex-control-nav li { width: 10px; }
+    ul#portfolio-container.two-columns li .item-wrapp .portfolio-item:hover a.item-permalink { left: 38%; }
+    ul#portfolio-container.two-columns li .item-wrapp .portfolio-item:hover a.item-preview { right: 38%; }
+    ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover a.item-permalink { left: 31.5%; }
+    ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover a.item-preview { right: 31.5%; }
+    .sypro_con { padding-left: 0; }
+
+    .sub_about ul li { width: 45%; float: left; margin-right: 30px; }
+    .right31 { margin-right: 0px; }
+    .cul-nav ul li { width: 110px; margin-right: 28px; }
+    .cul-nav ul { margin-left: 50px; }
+    .sub_comqi { width: 39%; float: left; }
+    .sub_com_capacity { width: 56%; float: right; }
+    .sub_com_capacity_l { display: none; }
+    .sub_com_capacity_r { width: 100%; }
+    .accordion-heading ul li { display: none; }
+    .sub_ban .img { width: 100%; left: 50%; }
+    .sub_contact_l { width: 100%; float: left; background-image: none; font-size: 20px; padding: 8px 15px 7px; }
+    .sub_contact_r { width: 100%; float: left; }
+    .sub_contact_r .online { float: left; margin-top: 20px; height: 40px; line-height: 40px; }
+    .baselayout { width: 100%; margin: 40px auto; overflow: hidden; }
+    .imagedesc_370 { width: 100%; display: block; overflow: hidden; position: relative; float: left; }
+    .imagedesc_370 img { width: 100%; height: auto; }
+    .w370 { width: 45%; margin: 0 5% 3% 0; }
+    .ml30 { margin-left: 0; }
+    .supportBot { background: none; }
+    .supportLeft { width: 100%; background: none; }
+    .sLeftCon { width: 100%; float: left; margin: 0; }
+    .supportRight { width: 100%; float: left; }
+    .pro_case li { width: 100%; }
+    .weizi { display: none; }
+    .proName { width: 100%; }
+    .proName h1 { font-size: 18px; }
+    .case dl dt { width: 26%; }
+    .case dl dd { width: 71%; }
+    .sub_menu span { display: none; }
+    .sub_menu ul { width: 100%; }
+
+    /*capacity*/
+    .imagedesc_370 { width: 22%; }
+
+    /*yanjiu*/
+    .pic { width: 25%; }
+    .wenzi { width: 43%; }
+    /*cul*/
+    .wenhua dl dt { width: 35%; }
+    .wenhua dl dd { width: 58%; }
+    /*send*/
+    .shenqing { width: 100%; }
+    .bshare-custom { float: none; margin: 0; }
+    /*fengcai*/
+    .l-fc { width: 95%; }
+    .r-fc { width: 95%; border-right: 0; }
+    .r-fc img { width: 50%; height: auto; float: left; }
+    .r-fc p { float: left; margin-left: 2%; width: 48%; margin-top: 0; }
+    /*service*/
+    .chengnuo dl { width: 27%; }
+    .chengnuo dl dt { width: 56%; }
+    /*peijian*/
+    .peijian span, .peijian p { width: 97%; }
+    .peijian ul li { width: 20.66%; }
+    /*guzhang*/
+    .l-tj { width: 56%; }
+    .r-xq { width: 44%; }
+    .l-tj input.kuang { width: 90%; }
+    .l-tj textarea { width: 90%; }
+    .xswl embed { height: 400px; }
+
+    /*honor*/
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 47%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+    .preview { width: 37%; }
+    /*logo shiyi*/
+    .pinpai dl { width: 42%; }
+    .pinpai dl dd { width: 71%; }
+
+    .prolist-con ul li { width: 30%; }
+
+    .case dl dd h3 { width: auto; }
+    .case-more { width: auto; }
+}
+/*___________________________________________________________________*/
+
+/*---------------iPhone & Samsung Mobiles landscape---------------*/
+/*___________________________________________________________________*/
+
+@media screen and (max-width: 768px) {
+    body { margin: 0 1%; }
+    .content { width: 100%; float: left; position: relative; }
+    .head-wrapp { border-bottom: none; height: 145px; }
+    #header-links .tel { width: 100%; text-indent: 10px; overflow: hidden; height: 35px; }
+    #top_right { display: none; }
+    #header-links { border-top: 4px solid #144a97; }
+    #main-navigation { width: 100%; margin: 0 auto; z-index: 9999; }
+    #main-navigation select { width: 100%; }
+    #main-navigation select li { background: #fc0; color: #000; font-size: 20px; }
+    #main-navigation ul { display: none; }
+    #main-navigation select { width: 100%; display: block; }
+
+    .navul { display: none; }
+    .smenu_ { cursor: pointer; padding: 7px 0 7px 10px; color: #fff; display: block; width: 100%; background-color: #DC251D; float: left; text-align: left; border-bottom: 1px #d8d8d8 solid; line-height: 17px; height: 20px; }
+    .smenu_ img { display: block; float: left; margin-top: 3px; cursor: pointer; margin-right: 10px; }
+    .smenu { width: 100%; z-index: 999; padding: 0px; position: absolute; margin: 35px 0px 0px 0px; padding: 0px; list-style: none; }
+    .smenu dd { background-color: #f0f0f0; width: 50%; float: left; text-align: left; border-bottom: 1px #d8d8d8 solid; line-height: 17px; padding-top: 9px; padding-left: 0; padding-right: 0; }
+    .smenu dd a { width: 100%; background: none; padding: 12px 20px; color: #000; }
+    .smenu dd img { display: block; float: left; border-left: 1px solid #ebebeb; margin-top: -9px; cursor: pointer; height: 31px; }
+
+
+    .head-wrapp { width: 100%; }
+    .head-wrapp .logo { float: left; width: 100%; margin-top: 20px; margin-bottom: 20px; }
+    .pro_fenlei { background-image: none; height: 210px; overflow: hidden; }
+    .i_main_t .i_add_ico li { width: 48%; margin-right: 5px; float: left; height: 25px; color: #565656; background: #f0f0f0 url(../images/link-arrow-gray.png) right center no-repeat; border-top: 1px solid #6f6f6f; border-bottom: 1px solid #e6e6e6; background-color: #fff; background-image: url(../images/link-arrow-gray.png); }
+    .isv_left { width: 100%; height: 40px; line-height: 40px; font-size: 22px; background-image: none; background: none; color: #000; padding-top: 10px; margin-top: 20px; text-align: left; }
+    .i_main_t { width: 100%; margin-top: 10px; }
+    .i_main_t .i_add_ico li.i1 .add_iimg, .i_main_t .i_add_ico li.i2 .add_iimg, .i_main_t .i_add_ico li.i3 .add_iimg, .i_main_t .i_add_ico li.i4 .add_iimg, .i_main_t .i_add_ico li.i5 .add_iimg { display: none; }
+    .container, .contact_left, .contact_right, .preview, .prod_intro, .sub_comqi, .sub_com_capacity, .sub_com_ca, .sub_left, .prolist_case, .projects-pro, .iservice, .projects-container, .prolist_con, .sBotList, .preview, .sub_menu, .w1170, #main, .prod_thumb { width: 100%; }
+    .projects-pro li { line-height: 25px; padding: 10px 20px 0 0; background: url(../images/xx.jpg) no-repeat right 17px; }
+
+    .sy_new { float: left; width: 100%; margin-right: 0; margin-bottom: 30px; }
+    .sy_sol { float: left; width: 100%; }
+    .sy_sol .com, .supportBot { display: none; }
+    .sy_sol .center_page { float: left; width: 100%; }
+    .sy_new dd { width: 65%; }
+    .sy_new ul li { float: left; width: 45%; height: 30px; overflow: hidden; }
+    .column .con { width: 93.5%; height: 40px; overflow: hidden; }
+    .projects-container li { width: 48%; }
+    .projects-pro.projects-pro { border-top: #d8d8d8 1px solid; width: 100%; padding: 0 0 20px 0; }
+    .projects-pro ul { width: 100%; }
+    .projects-pro span { display: none; }
+    .projects-container { padding: 0; }
+    .projects-container li { width: 100%; }
+    #container { width: 100%; }
+    .contact_right { float: left; }
+    #contact-form .form-div-1, #contact-form .form-div-2, #contact-form .form-div-3 { width: 100%; margin-bottom: 10px; }
+    .supportLeft { width: 100%; background: none; }
+    .sLeftCon { width: 100%; float: left; margin: 0; }
+    .supportRight { width: 100%; float: left; }
+    .sBotList li { width: 47%; }
+    .supportBox01 dl { width: 100%; }
+    .sub_right { width: 100%; float: left; }
+    .one-half { width: 100%; text-indent: 10px; padding-right: 10px; padding-left: 10px; }
+    .copyright_links { display: none; }
+    #footer { display: none; }
+    .xg_pro li { width: 46%; float: left; }
+    .xg_pro li img { width: 100%; height: auto; }
+    .sub_ban .img { width: 100%; }
+    .sub_com_capacity_r { float: left; width: 100%; margin-top: 20px; }
+    .sub_com_capacity_l { display: none; }
+    .sub_about ul li { width: 48%; float: left; }
+    .sub_contact_l { width: 100%; float: left; background-image: none; font-size: 20px; padding: 8px 15px 7px; }
+    .sub_contact_r { width: 100%; float: left; }
+    .sub_contact_r .online { float: left; margin-top: 20px; height: 40px; line-height: 40px; }
+    .job_left { width: 100%; }
+    .job_right { width: 100%; float: left; margin-top: 20px; }
+    .job_list li { width: 47%; margin-bottom: 20px; }
+    .job_list li img { width: 100%; height: auto; }
+    .pro_case li { width: 100%; margin-bottom: 3%; }
+    .Menubox li { font-size: 13px; }
+    .s_pic { width: 100%; }
+    .s_main { width: 100%; }
+    .weizi { display: none; }
+    .proName h1 { font-size: 14px; }
+    #topic ul li { width: 100%; margin-bottom: 3%; }
+    .m_l { width: 100%; }
+    .pro_contact { width: 100%; }
+    #relative ul li { width: 47%; margin-right: 3%; margin-bottom: 2%; }
+    .sol_tj_left { width: 100%; }
+    .sol_tj_left img { width: 100%; height: auto; }
+    .sol_tj_right { width: 100%; }
+    .protit h3 { font-size: 18px; font-weight: 600; }
+    .sol_product li { width: 30%; }
+    .case li { width: 100%; }
+    ul.relateproduct li { width: 46%; }
+    .left_form2 { width: 100%; }
+    .right_contact { width: 100%; }
+    .case_list li p { height: 25px; overflow: hidden; }
+    .sub_menu ul { width: 100%; }
+
+
+
+    #pro_tj_lx_tel p { background: none; font-size: 14px; padding: 0; padding-top: 1%; text-align: left; float: left; width: auto; }
+    #pro_tj_lx_tel span { color: #E3131E; font-weight: bold; margin-right: 8px; margin-top: 1%; float: left; width: auto; font-size: 28px; color: #E30F00; }
+
+    .cul-nav, .cul-ajax, .one-half a, .tj_new_left, .sub_new_tit span, .newar, .sub_menu span { display: none; }
+    .one-half p { text-indent: 1%; }
+    .newal, .sub_new h3, .tj_new_right, .proName { width: 100%; }
+    .Contentbox img { width: 90%; height: auto; }
+    .case dl dt { width: 100%; }
+    .case dl dd { width: 100%; }
+    .case dl dt img { width: 100%; height: auto; }
+    .case dl dd .tit { margin-top: 10px; }
+    .case dl dd h3 { width: auto; }
+    .case-more { width: auto; }
+
+    /*his*/
+    .fz-left { width: 100%; margin-bottom: 25px; }
+    .lx-right { width: 100%; margin-left: 0; }
+    /*guoji*/
+    .hezuo ul li { width: 29%; margin-right: 4%; margin-bottom: 15px; }
+    /*send*/
+    .shenqing { width: 100%; }
+    .bshare-custom { float: none; margin: 0; }
+    /*fengcai*/
+    .l-info, .r-info { width: 100%; }
+    .fc-pic ul li { width: 29%; margin-right: 4%; margin-bottom: 15px; }
+    .peijian span, .peijian p { width: 97%; }
+    /*his*/
+    .fz-left { width: 100%; margin-bottom: 25px; }
+    .lx-right { width: 100%; margin-left: 0; }
+
+    #msg .left, #msg .right { width: 100%; }
+    #msg .miaoshu span { width: 18%; }
+
+    /*honor*/
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 100%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+    .prolist_case li { width: 100%; }
+
+    /*logo shiyi*/
+    .pinpai dl { width: 92%; }
+    .pinpai dl dd { width: 85%; }
+
+    .prolist-con ul li { width: 45%; }
+    .prolist_case ul li { width: 100%; }
+    .sub_menu li { width: 76px; float: left; padding-left: 1px; height: 38px; line-height: 36px; }
+    .sub_menu .cur { font-size: 16px; }
+
+    .prodetail-heading ul li { float: left; padding: 0 20px 0 10px; line-height: 28px; }
+    .prodetail-toggle { border-bottom: #d8d8d8 1px solid; background: #f0f0f0; padding: 6px 0px 6px 20px; }
+    .prodetail-heading ul { background: none; }
+    .prodetail-heading { width: 100%; overflow: hidden; }
+    .hotpro dl { width: 45%; float: left; }
+
+
+    #jiathis .right { display: none; }
+    #prevnext b { width: 100%; float: left; }
+    #prevnext span { width: 100%; float: left; }
+
+    #Context_news img { width: 90%; height: auto; }
+     .contact_left .message{float:left;     margin-bottom: 5px;  width:100%; padding-left:0px;padding-right:0px;}
+    .send-inquiry2 h3{margin-top: 30px; font-size:18px; width:100%;}
+}
+
+@media screen and (max-width: 550px) {
+    .cont dd { float: left; margin-left: 0px; width: 100%; margin-top: 20px; }
+    .left_form2 ul li textarea{width:60%;}
+     #toptel{display:none;}
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    body { margin: 0 1%; }
+    #top1_right { display: none; }
+    .one-fourth { width: 49%; margin-right: 10px; }
+    #main-navigation ul { display: none; }
+    #main-navigation select { width: 100%; display: block; }
+    .sypro_con { padding-left: 0; }
+    .accordion-heading ul li { display: none; }
+    .sub_product li { width: 45%; margin-right: 2%; margin: 15px 2% 0 0; }
+    .sub_product ul { width: 100%; float: left; }
+    .sub_product_left { display: none; }
+    .slick-slide { display: block; width: 50%; float: left; }
+    .projects-container li { width: 100%; }
+    .baselayout { width: 100%; margin: 40px auto; overflow: hidden; }
+    .imagedesc_370 { width: 100%; display: block; overflow: hidden; position: relative; float: left; }
+    .imagedesc_370 img { width: 100%; height: auto; }
+    .w370 { width: 45%; margin: 0 5% 3% 0; }
+    .ml30 { margin-left: 0; }
+    .sub_menu ul { width: 100%; }
+    .sub_menu span { display: none; }
+    .preview { width: 100%; }
+    .prod_intro { width: 100%; float: left; margin-top: 20px; }
+    .xg_pro li { width: 46%; margin-bottom: 3%; }
+    .supportBox01 dl { width: 100%; float: left; }
+    .projects-container li { width: 48%; }
+    .pro_fenlei { height: 170px; }
+    .sBotList li { width: 47%; }
+    #relative ul li { width: 47%; margin-right: 3%; margin-bottom: 2%; }
+    .protit h3 { font-size: 16px; font-weight: 600; }
+    .sol_product li { width: 48%; }
+    ul.relateproduct li { width: 100%; }
+    .case li { width: 100%; }
+    .case_list li { width: 45%; }
+    ul.relateproduct li img { margin-left: 44%; }
+    .w1170, #main, .prod_thumb { width: 100%; }
+
+
+
+    /*capacity*/
+    .imagedesc_370 { width: 30%; }
+    /*公司honor*/
+    /*yanjiu*/
+    .pic { width: 45%; margin-bottom: 20px; }
+    .pic img { width: 100%; height: auto; }
+    .wenzi { width: 100%; }
+    /*cul*/
+    .wenhua dl dt { width: 92%; margin-bottom: 20px; }
+    .wenhua dl dt img { width: 100%; height: auto; }
+    .wenhua dl dd { width: 92%; }
+    /*fengcai*/
+    .l-fc { width: 95%; }
+    .r-fc { width: 95%; border-right: 0; }
+    .r-fc img { width: 100%; height: auto; }
+    .r-fc p { width: 100%; }
+    /*service*/
+    .chengnuo dl { width: 25%; }
+    .chengnuo dl dt { width: 95%; }
+    /*peijian*/
+    .peijian ul li { width: 29%; }
+
+    /*logo shiyi*/
+    .pinpai dl { width: 94%; }
+    .pinpai dl dd { width: 78%; }
+
+    /*honor*/
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 100%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+    .prolist-con { width: 100%; }
+    .prolist-con ul li { width: 47%; }
+    .prolist_case li { width: 100%; }
+    .hotpro dl { width: 45%; float: left; }
+}
+@media screen and (max-width: 420px) {
+    #leftMenu_101001, #leftMenu_101002, #leftMenu_101003, #leftMenu_101004, #leftMenu_101005 { display: none; }
+    #Context_news .date { display: none; }
+    #Context .date { display: none; }
+    .left_form2 ul li { height: auto; }
+    .left_form2 ul li input.intxt { width: 80%; }
+    .left_form2 ul li span { text-align: left; }
+    .left_form2 ul li textarea { width: 80%; height: auto; }
+    .left_form2 .btnclick { padding-left: 20px; margin-bottom: 20px; }
+    .contact_left .tel span { width: 100%; float: left; margin-top: 20px; margin-bottom: 20px; }
+    .contact_left .tel1, .contact_left .tel2 { display: none; }
+    .contact_left p.add { float: left; line-height: 30px; }
+    .contact_left .email { float: left; line-height: 30px;  width:100%; }
+   
+
+}
+@media screen and (max-width: 320px) {
+    .sRightTop .sRdv{width: 45%;}
+    .sRightTop .sRdv1{width: 45%;     border-right: #CECECE 0px solid; }
+    .sRightTop .sRdv2{display:none;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .xg_pro li { width: 46%; float: left; }
+    .sub_product ul, .i_main_t .i_add_ico li, .sy_new ul li, .sBotList li, .case li, ul.relateproduct li, .prolist-con, .prolist_case, .w1170, #main, .prod_thumb { width: 100%; }
+    .projects-container li { width: 48%; }
+    .case_list li { width: 45%; }
+    .job_list li { width: 48%; }
+    .sub_about ul li { width: 48%; }
+    #main-navigation { width: 100%; margin: 0 auto; z-index: 9999; }
+    .sub_product li { width: 47%; margin-left: 0; margin-bottom: 15px; }
+    .sub_product_left, .sy_new dl { display: none; }
+
+    #relative ul li { width: 100%; }
+    #relative .r_pic { display: none; }
+    .sol_product li { width: 45%; }
+    .protit h3 { font-size: 14px; font-weight: 600; }
+    .sub_product li { margin-left: 0; }
+
+    /*capacity*/
+    .imagedesc_370 { width: 47%; }
+    /*公司honor*/
+    /*yanjiu*/
+    .pic { width: 43%; margin-bottom: 20px; }
+    .pic img { width: 100%; height: auto; }
+    .wenzi { width: 100%; }
+
+    /*logo shiyi*/
+    .pinpai dl { width: 88%; }
+    .pinpai dl dt { width: 100%; text-align: center; float: none; }
+    .pinpai dl dd { width: 100%; text-align: center; }
+    /*cul*/
+    .wenhua dl dt { width: 92%; margin-bottom: 20px; }
+    .wenhua dl dt img { width: 100%; height: auto; }
+    .wenhua dl dd { width: 92%; }
+    /*guoji*/
+    .hezuo ul li { width: 43%; margin-right: 7%; }
+    /*send*/
+    .zw-jieshao ul li { width: 44%; margin-right: 5%; }
+    .shenqing a { display: block; padding: 10px 0; text-align: center; }
+    .shenqing a.sq { margin-bottom: 10px; }
+    /*fengcai*/
+    .l-fc { width: 90%; }
+    .r-fc { width: 90%; border-right: 0; }
+    .r-fc img { width: 100%; height: auto; }
+    .r-fc p { width: 100%; }
+    .fc-pic ul li { width: 43%; margin-right: 7%; }
+    /*service*/
+    .chengnuo dl { width: 100%; }
+    .chengnuo dl dt { width: 35%; }
+    .fw-icon dl { width: 50%; margin-bottom: 15px; }
+    /*peijian*/
+    .peijian ul li { width: 46%; }
+
+
+    /*honor*/
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 45%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+
+    .prolist-con ul li { width: 47%; }
+    .prolist_case ul li { width: 100%; }
+    .hotpro dl { width: 45%; float: left; }
+}
+
+@media screen and (max-width: 319px) {
+    .sub_product li { width: 100%; margin-left: 0; margin-bottom: 15px; }
+    .sub_product_left { display: none; }
+    .sub_product ul { width: 100%; }
+    .pro_fenlei { height: auto; }
+    .preview { width: 100%; }
+    .prod_intro, .w1170, #main { width: 100%; }
+    .xg_pro li { width: 100%; float: left; }
+    .job_list li { width: 100%; }
+    .sy_new dl { display: none; }
+    .i_main_t .i_add_ico li { width: 100%; }
+    .sy_new ul li { width: 100%; }
+    .projects-container li { width: 100%; }
+    .sBotList li { width: 100%; }
+    #relative ul li { width: 100%; }
+    #relative .r_pic { display: none; }
+    .sol_product li { width: 100%; }
+    .protit h3 { font-size: 12px; font-weight: 600; }
+    ul.relateproduct li { width: 100%; }
+
+    .prolist-con ul li, .prolist_case, .prolist_case ul li, .hotpro dl, .peijian ul li, .chengnuo dl, .wenzi, .case_list li, .prolist-con, .case li, .imagedesc_370, .honor dl, .honor dl dt, .honor dl dd { width: 100%; }
+
+
+    .honor dl dt img { width: 100%; height: auto; }
+    /*yanjiu*/
+    .pic { width: 100%; margin-bottom: 20px; }
+    .pic img { width: 100%; height: auto; }
+
+    /*logo shiyi*/
+    .pinpai dl { width: 85%; }
+    .pinpai dl dt { width: 100%; text-align: center; float: none; }
+    .pinpai dl dd { width: 100%; text-align: center; }
+    /*cul*/
+    .wenhua dl { width: 100%; margin-bottom: 20px; }
+    .wenhua dl dt { width: 98%; margin-bottom: 20px; }
+    .wenhua dl dt img { width: 100%; height: auto; }
+    .wenhua dl dd { width: 98%; }
+    /*guoji*/
+    .hezuo ul li { width: 43%; margin-right: 7%; }
+    /*send*/
+    .tit-yp, .tit-yp2 { width: 26%; }
+    .item input.txt { width: 58%; }
+    .m-info textarea { width: 68%; }
+    .fasong input.tijiao { margin-bottom: 10px; }
+    .zw-jieshao ul li { width: 44%; margin-right: 5%; }
+    .shenqing a { display: block; padding: 10px 0; text-align: center; }
+    .shenqing a.sq { margin-bottom: 10px; }
+    /*fengcai*/
+    .l-fc { width: 89%; }
+    .r-fc { width: 89%; border-right: 0; }
+    .r-fc img { width: 100%; height: auto; }
+    .r-fc p { width: 100%; }
+    .fc-pic ul li { width: 43%; margin-right: 7%; }
+    /*service*/
+    .chengnuo dl dt { width: 35%; }
+    .fw-icon dl { width: 50%; margin-bottom: 15px; }
+    /*peijian*/
+    .peijian ul li img { width: 100%; height: auto; }
+    /*guzhang*/
+
+    /*honor*/
+    .honor_s { display: block; margin-top: 20px; margin-left: 20px; }
+    .honor_s li { width: 100%; float: left; margin-right: 20px; margin-bottom: 20px; }
+    .honor_s li img { width: 100%; height: auto; margin: 0 auto; }
+    .honor-box { display: none; }
+}

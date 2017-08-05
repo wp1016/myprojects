@@ -1,0 +1,20 @@
+<div ng-app="myApp1">
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<div class="bar bar-subheader">
+  <div class="button-bar">
+    <a class="button button-outline button-stable" style="color:#444">
+      综述
+    </a>
+    <a class="button button-outline button-stable" style="color:#444">
+      图片
+    </a>
+    <a class="button button-outline button-stable" style="color:#444">
+      文章
+    </a>
+    <a class="button button-outline button-stable" style="color:#444">
+      经销商
+    </a>
+  </div>
+</div>
+<div ui-view=""></div>
+</div>

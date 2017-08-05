@@ -1,0 +1,152 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+  <!--搜索框-->
+  <div class="list list-inset">
+    <a class="button button-block" ui-sref="search">
+      <span>
+        <i class="icon ion-search"></i>
+        搜索
+      </span>
+    </a>
+  </div>
+  <div class="row light-bg">
+    <div class="col col-25 text-center">
+      <a class="button light-bg" ui-sref="hot">
+        <img ng-src="img/1.png" alt=""/><br/>
+        <small>热门车型</small>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button light-bg" ui-sref="new">
+        <img ng-src="img/2.png" alt=""/><br/>
+       <small>上市新车</small>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button light-bg" ui-sref="hotSales">
+        <img ng-src="img/3.png" alt=""/><br/>
+        <small>热销车型</small>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button light-bg" ui-sref="userCenter">
+        <img ng-src="img/4.png" alt=""/><br/>
+        <small>我的</small>
+      </a>
+    </div>
+  </div>
+   <!--条件选车-->
+    <div class="list" ui-sref="filter">
+      <a class="item item-icon-right" href="#/ahFilter">
+        条件选车
+        <span class="item-note">
+          7993个车型&gt;
+        </span>
+      </a>
+    </div>
+  <!--热门品牌-->
+    <div class="list" id="brands">
+      <a class="item">热门品牌</a>
+      <div class="item">
+        <div class="row">
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand/9" class="button light-bg">
+              <img ng-src="img/dazhong_logo.jpg" alt=""/><br/>
+              <small>大众</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/fengtian_logo.jpg" alt=""/><br/>
+              <small>丰田</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/fute_logo.jpg" alt=""/><br/>
+              <small>福特</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/xiandai_logo.jpg" alt=""/><br/>
+              <small>现代</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/bentian_logo.jpg" alt=""/><br/>
+              <small>本田</small>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand/3" class="button light-bg">
+              <img ng-src="img/baoma_logo.jpg" alt=""/><br/>
+              <small>宝马</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/jili_logo.jpg" alt=""/><br/>
+              <small>吉利汽车</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand/1" class="button light-bg">
+              <img ng-src="img/aodi_logo.jpg" alt=""/><br/>
+              <small>奥迪</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand/4" class="button light-bg">
+              <img ng-src="img/benci_logo.jpg" alt=""/><br/>
+              <small>奔驰</small>
+            </a>
+          </div>
+          <div class="col col-20 text-center">
+            <a href="#/ahBrand" class="button light-bg">
+              <img ng-src="img/bieke_logo.jpg" alt=""/><br/>
+              <small>别克</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--用途选车-->
+  <div class="list use">
+    <a class="item">用途选车</a>
+    <h2 class="light-bg">
+      <button class="button button-outline button-positive" ui-sref="use">
+        舒适性好
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        网约车新政
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        撩妹利器
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        想买suv
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        入门代步
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        创业伙伴
+      </button>
+    </h2>
+  </div>
+  <!--品牌列表-->
+  <div ng-repeat="title in titles">
+    <h4 class="padding-left">{{title}}</h4>
+    <ion-list id="brands-list">
+      <a ng-repeat="brand in brandList" href="#/ahBrand/{{brand.bid}}/{{brand.bName_lg}}" class="item item-avatar" ng-if="brand.bName_sm[0]==title">
+        <img ng-src="{{brand.bSrc}}" alt=""/>
+        <h3 class="padding-vertical">{{brand.bName_lg}}</h3>
+        <hr/>
+      </a>
+    </ion-list>
+  </div>
+</ion-content>

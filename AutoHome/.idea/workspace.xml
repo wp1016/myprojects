@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="c24a1dcb-60a1-4ac4-9286-806a6088f0cb" name="Default" comment="Failed commit: Default">
+      <change type="MODIFICATION" beforePath="D:\WEB\AutoHome\1\index.php" afterPath="D:\WEB\AutoHome\1\index.php" />
+      <change type="MODIFICATION" beforePath="D:\WEB\AutoHome\1\config.yaml" afterPath="D:\WEB\AutoHome\1\config.yaml" />
+    </list>
+    <list id="dcc3e212-ca17-4d1e-a0e1-fd1b00f7f44e" name="Failed commit: Default" comment="" />
+    <list id="41cc8e7c-916e-4841-97e0-b14e260008f9" name="Failed commit: Default (2)" comment="Failed commit: Default" />
+    <ignored path="AutoHome.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="AutoHome" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="autoHome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="308" column="30" selection-start-line="308" selection-start-column="30" selection-end-line="308" selection-end-column="30" />
+              <folding>
+                <element signature="e#160#2100#0" expanded="false" />
+                <element signature="e#2137#2407#0" expanded="false" />
+                <element signature="e#2440#3402#0" expanded="false" />
+                <element signature="e#3437#4149#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1/tpl/hot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1/tpl/detail/all.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoHome.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1/data/autoHome.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1/tpl/filter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1863426">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1/data/init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/1/data/hotbrand.php" />
+        <option value="$PROJECT_DIR$/1/tpl/error.html" />
+        <option value="$PROJECT_DIR$/1/data/new.php" />
+        <option value="$PROJECT_DIR$/1/tpl/new.html" />
+        <option value="$PROJECT_DIR$/1/tpl/include/header.html" />
+        <option value="$PROJECT_DIR$/1/data/hot.php" />
+        <option value="$PROJECT_DIR$/1/data/hotsales.php" />
+        <option value="$PROJECT_DIR$/1/data/search.php" />
+        <option value="$PROJECT_DIR$/1/data/search_bykw.php" />
+        <option value="$PROJECT_DIR$/1/data/search_byname.php" />
+        <option value="$PROJECT_DIR$/1/tpl/search.html" />
+        <option value="$PROJECT_DIR$/1/tpl/userCenter.html" />
+        <option value="$PROJECT_DIR$/1/index.html" />
+        <option value="$PROJECT_DIR$/1/data/usercollection.php" />
+        <option value="$PROJECT_DIR$/1/tpl/hot.html" />
+        <option value="$PROJECT_DIR$/1/tpl/hotSales.html" />
+        <option value="$PROJECT_DIR$/1/tpl/detail.html" />
+        <option value="$PROJECT_DIR$/1/css/autoHome.css" />
+        <option value="$PROJECT_DIR$/1/tpl/use.html" />
+        <option value="$PROJECT_DIR$/1/data/autoHome.sql" />
+        <option value="$PROJECT_DIR$/1/tpl/main.html" />
+        <option value="$PROJECT_DIR$/1/data/main.php" />
+        <option value="$PROJECT_DIR$/1/tpl/detail/all.html" />
+        <option value="$PROJECT_DIR$/1/js/autoHome.js" />
+        <option value="$PROJECT_DIR$/1/data/init.php" />
+        <option value="$PROJECT_DIR$/1/tpl/filter.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1932" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AutoHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="JavaScriptLanguageLevel" value="ES6" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/Autohome" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB\AutoHome" />
+      <recent name="D:\WEB\AutoHome\1" />
+      <recent name="D:\WEB\AutoHome\1\data" />
+      <recent name="D:\WEB\AutoHome\1\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing" cleanupOnStartRun="true">
+    <configuration useDefault="false">C:\Users\王盼\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\WEB\AutoHome" />
+          <option name="myCopyRoot" value="D:\WEB\AutoHome" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\WEB\AutoHome" />
+          <option name="myCopyRoot" value="D:\WEB\AutoHome" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c24a1dcb-60a1-4ac4-9286-806a6088f0cb" name="Default" comment="" />
+      <created>1488117143718</created>
+      <option name="number" value="Default" />
+      <updated>1488117143718</updated>
+    </task>
+    <task id="LOCAL-00245" summary="Failed commit: Default">
+      <created>1488599597105</created>
+      <option name="number" value="00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599597105</updated>
+    </task>
+    <task id="LOCAL-00246" summary="Failed commit: Default">
+      <created>1488599688104</created>
+      <option name="number" value="00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599688104</updated>
+    </task>
+    <task id="LOCAL-00247" summary="Failed commit: Default">
+      <created>1488599766103</created>
+      <option name="number" value="00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599766103</updated>
+    </task>
+    <task id="LOCAL-00248" summary="Failed commit: Default">
+      <created>1488599825113</created>
+      <option name="number" value="00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599825113</updated>
+    </task>
+    <task id="LOCAL-00249" summary="Failed commit: Default">
+      <created>1488599841104</created>
+      <option name="number" value="00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599841104</updated>
+    </task>
+    <task id="LOCAL-00250" summary="Failed commit: Default">
+      <created>1488599939103</created>
+      <option name="number" value="00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1488599939103</updated>
+    </task>
+    <task id="LOCAL-00251" summary="Failed commit: Default">
+      <created>1488600005104</created>
+      <option name="number" value="00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1488600005104</updated>
+    </task>
+    <task id="LOCAL-00252" summary="Failed commit: Default">
+      <created>1488600063104</created>
+      <option name="number" value="00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1488600063104</updated>
+    </task>
+    <task id="LOCAL-00253" summary="Failed commit: Default">
+      <created>1488601684103</created>
+      <option name="number" value="00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1488601684103</updated>
+    </task>
+    <task id="LOCAL-00254" summary="Failed commit: Default">
+      <created>1488601695103</created>
+      <option name="number" value="00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1488601695103</updated>
+    </task>
+    <task id="LOCAL-00255" summary="Failed commit: Default">
+      <created>1488602116103</created>
+      <option name="number" value="00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602116103</updated>
+    </task>
+    <task id="LOCAL-00256" summary="Failed commit: Default">
+      <created>1488602501105</created>
+      <option name="number" value="00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602501105</updated>
+    </task>
+    <task id="LOCAL-00257" summary="Failed commit: Default">
+      <created>1488602527104</created>
+      <option name="number" value="00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602527104</updated>
+    </task>
+    <task id="LOCAL-00258" summary="Failed commit: Default">
+      <created>1488602630104</created>
+      <option name="number" value="00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602630104</updated>
+    </task>
+    <task id="LOCAL-00259" summary="Failed commit: Default">
+      <created>1488602716103</created>
+      <option name="number" value="00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602716103</updated>
+    </task>
+    <task id="LOCAL-00260" summary="Failed commit: Default">
+      <created>1488602743104</created>
+      <option name="number" value="00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602743104</updated>
+    </task>
+    <task id="LOCAL-00261" summary="Failed commit: Default">
+      <created>1488602786104</created>
+      <option name="number" value="00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602786104</updated>
+    </task>
+    <task id="LOCAL-00262" summary="Failed commit: Default">
+      <created>1488602816105</created>
+      <option name="number" value="00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602816105</updated>
+    </task>
+    <task id="LOCAL-00263" summary="Failed commit: Default">
+      <created>1488602868103</created>
+      <option name="number" value="00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602868103</updated>
+    </task>
+    <task id="LOCAL-00264" summary="Failed commit: Default">
+      <created>1488602894104</created>
+      <option name="number" value="00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602894104</updated>
+    </task>
+    <task id="LOCAL-00265" summary="Failed commit: Default">
+      <created>1488602939103</created>
+      <option name="number" value="00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602939103</updated>
+    </task>
+    <task id="LOCAL-00266" summary="Failed commit: Default">
+      <created>1488602966104</created>
+      <option name="number" value="00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602966104</updated>
+    </task>
+    <task id="LOCAL-00267" summary="Failed commit: Default">
+      <created>1488602987103</created>
+      <option name="number" value="00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1488602987103</updated>
+    </task>
+    <task id="LOCAL-00268" summary="Failed commit: Default">
+      <created>1488603009114</created>
+      <option name="number" value="00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603009114</updated>
+    </task>
+    <task id="LOCAL-00269" summary="Failed commit: Default">
+      <created>1488603073103</created>
+      <option name="number" value="00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603073103</updated>
+    </task>
+    <task id="LOCAL-00270" summary="Failed commit: Default">
+      <created>1488603303103</created>
+      <option name="number" value="00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603303103</updated>
+    </task>
+    <task id="LOCAL-00271" summary="Failed commit: Default">
+      <created>1488603380102</created>
+      <option name="number" value="00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603380103</updated>
+    </task>
+    <task id="LOCAL-00272" summary="Failed commit: Default">
+      <created>1488603418104</created>
+      <option name="number" value="00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603418104</updated>
+    </task>
+    <task id="LOCAL-00273" summary="Failed commit: Default">
+      <created>1488603436104</created>
+      <option name="number" value="00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603436104</updated>
+    </task>
+    <task id="LOCAL-00274" summary="Failed commit: Default">
+      <created>1488603460104</created>
+      <option name="number" value="00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1488603460104</updated>
+    </task>
+    <task id="LOCAL-00275" summary="Failed commit: Default">
+      <created>1488604855104</created>
+      <option name="number" value="00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1488604855104</updated>
+    </task>
+    <task id="LOCAL-00276" summary="Failed commit: Default">
+      <created>1488604938104</created>
+      <option name="number" value="00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1488604938104</updated>
+    </task>
+    <task id="LOCAL-00277" summary="Failed commit: Default">
+      <created>1488605000104</created>
+      <option name="number" value="00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1488605000104</updated>
+    </task>
+    <task id="LOCAL-00278" summary="Failed commit: Default">
+      <created>1488605048207</created>
+      <option name="number" value="00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1488605048207</updated>
+    </task>
+    <task id="LOCAL-00279" summary="Failed commit: Default">
+      <created>1488605120104</created>
+      <option name="number" value="00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1488605120104</updated>
+    </task>
+    <task id="LOCAL-00280" summary="Failed commit: Default">
+      <created>1488605337103</created>
+      <option name="number" value="00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1488605337103</updated>
+    </task>
+    <task id="LOCAL-00281" summary="Failed commit: Default">
+      <created>1488605372103</created>
+      <option name="number" value="00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1488605372103</updated>
+    </task>
+    <task id="LOCAL-00282" summary="Failed commit: Default">
+      <created>1488639903107</created>
+      <option name="number" value="00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1488639903107</updated>
+    </task>
+    <task id="LOCAL-00283" summary="Failed commit: Default">
+      <created>1488640953103</created>
+      <option name="number" value="00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1488640953103</updated>
+    </task>
+    <task id="LOCAL-00284" summary="Failed commit: Default">
+      <created>1488641838103</created>
+      <option name="number" value="00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1488641838103</updated>
+    </task>
+    <task id="LOCAL-00285" summary="Failed commit: Default">
+      <created>1488641850104</created>
+      <option name="number" value="00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1488641850104</updated>
+    </task>
+    <task id="LOCAL-00286" summary="Failed commit: Default">
+      <created>1488641945103</created>
+      <option name="number" value="00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1488641945103</updated>
+    </task>
+    <task id="LOCAL-00287" summary="Failed commit: Default">
+      <created>1488699740110</created>
+      <option name="number" value="00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1488699740111</updated>
+    </task>
+    <task id="LOCAL-00288" summary="Failed commit: Default">
+      <created>1488699763104</created>
+      <option name="number" value="00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1488699763104</updated>
+    </task>
+    <task id="LOCAL-00289" summary="Failed commit: Default">
+      <created>1488699783104</created>
+      <option name="number" value="00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1488699783104</updated>
+    </task>
+    <task id="LOCAL-00290" summary="Failed commit: Default">
+      <created>1488807050251</created>
+      <option name="number" value="00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1488807050252</updated>
+    </task>
+    <task id="LOCAL-00291" summary="Failed commit: Default">
+      <created>1488807092105</created>
+      <option name="number" value="00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1488807092105</updated>
+    </task>
+    <task id="LOCAL-00292" summary="Failed commit: Default">
+      <created>1488977365160</created>
+      <option name="number" value="00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1488977365161</updated>
+    </task>
+    <task id="LOCAL-00293" summary="Failed commit: Default">
+      <created>1488977614104</created>
+      <option name="number" value="00293" />
+      <option name="project" value="LOCAL" />
+      <updated>1488977614104</updated>
+    </task>
+    <option name="localTasksCounter" value="294" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1868476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Failed commit: Default" />
+    <option name="LAST_COMMIT_MESSAGE" value="Failed commit: Default" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="308" column="30" selection-start-line="308" selection-start-column="30" selection-end-line="308" selection-end-column="30" />
+          <folding>
+            <element signature="e#160#2100#0" expanded="false" />
+            <element signature="e#2137#2407#0" expanded="false" />
+            <element signature="e#2440#3402#0" expanded="false" />
+            <element signature="e#3437#4149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/hot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/detail/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/autoHome.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="9" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
+          <folding>
+            <element signature="e#160#2100#0" expanded="false" />
+            <element signature="e#2137#2407#0" expanded="false" />
+            <element signature="e#2440#3402#0" expanded="false" />
+            <element signature="e#3437#4149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/hot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/detail/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+          <folding>
+            <element signature="e#160#2100#0" expanded="false" />
+            <element signature="e#2137#2407#0" expanded="false" />
+            <element signature="e#2440#3402#0" expanded="false" />
+            <element signature="e#3437#4149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/detail/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#160#2100#0" expanded="false" />
+            <element signature="e#2137#2407#0" expanded="false" />
+            <element signature="e#2440#3402#0" expanded="false" />
+            <element signature="e#3437#4149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/hot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/detail/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/data/autoHome.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/js/autoHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="308" column="30" selection-start-line="308" selection-start-column="30" selection-end-line="308" selection-end-column="30" />
+          <folding>
+            <element signature="e#160#2100#0" expanded="false" />
+            <element signature="e#2137#2407#0" expanded="false" />
+            <element signature="e#2440#3402#0" expanded="false" />
+            <element signature="e#3437#4149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/tpl/filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1863426">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=100" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="applicable-device"content="pc,mobile" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/sub.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/responsive.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<!--[if lt IE 9]><script  type="text/javascript"  src="{dede:global.cfg_templets_skin/}/js/css3-mediaqueries.js"></script><![endif]--> 
+<script src="{dede:global.cfg_templets_skin/}/js/nav.js" type="text/javascript"></script> 
+
+</head>
+<body>
+        {dede:include filename="head.htm"/}
+
+
+    <div class="sub_ban">
+        <img src="{dede:global.cfg_templets_skin/}/images/news_banner.jpg" width="1920" height="278" class="img" />
+    </div>
+    <div class="sub_menu">
+        <ul id="secmenu">
+            <li class="cur">新闻中心</li>
+              {dede:channel type='son' noself='yes'}
+            <li id='leftMenu_101001'><a href='[field:typelink/]'>[field:typename/]</a></li>
+            {/dede:channel}
+
+             
+        </ul>
+        <span>{dede:field name='position'/}</span>
+    </div>
+    <div class="content">
+        <div class="sub_left">
+            <div class="sub_new">
+                <ul>
+                    {dede:list pagesize='10' titlelen='50'}
+
+<li><span class='newal'><a href='[field:arcurl/]'>[field:title/]</a></span><span class='newar'>[field:pubdate function="GetDateMK(@me)"/] </span></li>
+{/dede:list} 
+
+
+                </ul>
+                <div style="clear"></div>
+                <div id="ctl00_ContentConn_PageInfo" class="fenye"> {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}</div>
+                <div style="height: 10px;"></div>
+
+            </div>
+
+        </div>
+        <!--end left-->
+        <!--right-->
+        <div class="sub_right">
+            <div class="listcon">
+                <h3>热点关注</h3>
+                <ul>
+                {dede:arclist row=10 orderby=click titlelen='50'}
+                    <li><a href='[field:arcurl/]' title='[field:title/]'>[field:title/]</a></li>
+{/dede:arclist}
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+      {dede:include filename="foot.htm"/}
+
+</body>
+</html>
+
+
+

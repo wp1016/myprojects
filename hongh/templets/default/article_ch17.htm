@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="shortcut icon" href="http://www.hxjq.com/favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=100" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="applicable-device"content="pc,mobile" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/sub.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/responsive.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<!--[if lt IE 9]><script  type="text/javascript"  src="{dede:global.cfg_templets_skin/}/js/css3-mediaqueries.js"></script><![endif]--> 
+<script src="{dede:global.cfg_templets_skin/}/js/nav.js" type="text/javascript"></script> 
+    <script src="{dede:global.cfg_templets_skin/}/js/table.js" type="text/javascript"></script>
+</head>
+<body>
+     {dede:include filename="head.htm"/}
+
+    <div class="sub_tit">
+        <div class="container">{dede:field name='position'/}</div>
+    </div>
+    <div class="container">
+        <div class="fix pro_detail">
+            <div class="preview">
+                <div class="zoom">
+                    <img src='{dede:field name='litpic'/}'  width='460' height='340' id='zoomimg' alt='{dede:field.title/}' title='{dede:field.title/}' border='0'   />
+
+                </div>
+           
+
+            
+
+            </div>
+            <div class="r prod_intro">
+                <h1 class="prodTitle"> {dede:field.title/}</h1>
+                <div class="prod_cap">{dede:field.jy/}</div>
+                <div class="prod_fw"><span>应用领域</span><p>{dede:field.yy/}</p> <span>适用物料</span><p>{dede:field.sywl/}</p> </div>
+                
+
+                <div id="pro_tj_lx_tel">
+                    <p>全国24小时销售热线:</p>
+                    <a href="{dede:field.xsrx/}"><span>{dede:field.xsrx/}</span></a>
+                </div>
+                <div id="pro_tj_lx">
+                    <a style="cursor: pointer" onclick="window.open('{dede:field.bj/}')" rel="nofollow" class="line-zixun">获取优惠报价</a> <a style="cursor: pointer" onclick="window.open('{dede:field.zxzx/}')" rel="nofollow" class="line-order">在线咨询设备</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub_left">
+
+            <div class="Menubox">
+                <ul>
+                    <a href="#p1" rel='nofollow'>
+                        <li id="tb1" class="current">技术与规格</li>
+                    </a>
+                    <a href="#p2" rel='nofollow'>
+                        <li id="tb2" class="">突出优势 </li>
+                    </a>
+                    <a href="#p3" rel='nofollow'>
+                        <li id="tb3" class="">工作原理 </li>
+                    </a>
+                    <a href="#p4" rel='nofollow'>
+                        <li id="tb4" class="">技术参数 </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div class="Contentbox">
+
+                <div id="con_tb_1" style="display: block;">
+                    <a name="p1"></a><p> {dede:field.jsygg/}</p>
+                </div>
+                 <div id="con_tb_2"><h3> <a name="p2"></a>突出优势</h3><a name='2'></a>{dede:field.tcys/}</div>
+
+                 <div id="con_tb_3"><h3> <a name="p3"></a>工作原理</h3><a name='3'></a><p>{dede:field.gzyl/}</p></div>
+
+                 <div id="con_tb_4"><h3> <a name="p4"></a>技术参数</h3>{dede:field.jscs/}</div>
+            </div>
+        </div>
+
+
+        <div class="sub_right">
+            <div class="column_pro">
+                <div class="title18_pro show onshow">
+                    <p>最新产品</p>
+                </div>
+                <div class="inner" style="display: block;">
+                    <div class="con_pro">
+                        <ul>
+                        {dede:arclist row='15' typeid='9' }
+                            <li><a href='[field:arcurl/]' title='[field:title/]'>[field:title/]</a></li>
+                     {/dede:arclist}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lx">
+              <p>全国统一销售热线：<span>{dede:global.ncrx /}</span></p>
+                <p>总部地址：{dede:global.zbdz /}</p>
+                <p>邮箱：{dede:global.yx /} </p>
+                <div class="message"><a onclick="window.open('dede:global.qq /}')" rel="nofollow">点击在线咨询</a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+   {dede:include filename="foot.htm"/}
+    
+</body>
+</html>
+
+
+

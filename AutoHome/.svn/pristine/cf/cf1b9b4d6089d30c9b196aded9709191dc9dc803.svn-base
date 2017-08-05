@@ -1,0 +1,45 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="list use light-bg">
+        <h2>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:1==clickedIndex}" ng-click="toggle(1)">
+                <span class="dark">舒适性好</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:2==clickedIndex}" ng-click="toggle(2)">
+                <span class="dark">网约车新政</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:3==clickedIndex}" ng-click="toggle(3)">
+                <span class="dark">撩妹利器</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:4==clickedIndex}" ng-click="toggle(4)">
+                <span class="dark">想买SUV</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:5==clickedIndex}" ng-click="toggle(5)">
+                <span class="dark">入门代步</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:6==clickedIndex}" ng-click="toggle(6)">
+                <span class="dark">创业伙伴</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:7==clickedIndex}" ng-click="toggle(7)">
+                <span class="dark">都市白领</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:8==clickedIndex}" ng-click="toggle(8)">
+                <span class="dark">内饰做工上乘</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:9==clickedIndex}" ng-click="toggle(9)">
+                <span class="dark">改装潜力股</span>
+            </a>
+            <a href="" class="button button-outline button-light  button-large" ng-class="{active:10==clickedIndex}" ng-click="toggle(10)">
+                <span class="dark">空间宽敞</span>
+            </a>
+        </h2>
+    </div>
+    <div class="list">
+        <a href="#/detail" class="item item-thumbnail-left">
+            <img ng-src="img/bmw/bmjk_bmw7_lg.jpg" alt=""/>
+            <h2>宝马7系</h2>
+            <h2 class="assertive">23.88-37.98<span>万</span></h2>
+            <span class="item-note">&gt;</span>
+        </a>
+    </div>
+</ion-content>

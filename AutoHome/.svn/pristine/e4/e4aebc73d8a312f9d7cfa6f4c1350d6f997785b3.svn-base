@@ -1,0 +1,104 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+  <!--搜索框-->
+  <div class="list list-inset">
+    <a class="button button-block" ui-sref="search">
+      <span>
+        <i class="icon ion-search"></i>
+        搜索
+      </span>
+    </a>
+  </div>
+  <div class="row light-bg">
+    <div class="col col-25 text-center">
+      <a class="button button-clear button-light" ui-sref="hot">
+        <img ng-src="img/1.png" alt=""/><br/>
+        <span class="dark">热门车型</span>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button button-clear button-light" ui-sref="new">
+        <img ng-src="img/2.png" alt=""/><br/>
+       <span class="dark">上市新车</span>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button button-clear button-light" ui-sref="hotSales">
+        <img ng-src="img/3.png" alt=""/><br/>
+        <span class="dark">热销车型</span>
+      </a>
+    </div>
+    <div class="col col-25 text-center">
+      <a class="button button-clear button-light" ui-sref="userCenter">
+        <img ng-src="img/4.png" alt=""/><br/>
+        <span class="dark">我的</span>
+      </a>
+    </div>
+  </div>
+   <!--条件选车-->
+    <div class="list" ui-sref="filter">
+      <a class="item item-icon-right" href="#/ahFilter">
+        条件选车
+        <span class="item-note">
+          {{count}}个车型&gt;
+        </span>
+      </a>
+    </div>
+  <!--热门品牌-->
+    <div class="list" id="brands">
+      <a class="item">热门品牌</a>
+      <div class="item">
+        <div class="row">
+          <div class="col col-20 text-center" ng-repeat="firstHotbrand in firstHotbrands">
+            <a href="#/ahBrand/{{firstHotbrand.bid}}/{{firstHotbrand.carName}}" class="button button-clear button-light">
+              <img ng-src="{{firstHotbrand.bSrc}}" alt=""/><br/>
+              <small class="dark">{{firstHotbrand.bName_lg}}</small>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-20 text-center" ng-repeat="secondHotbrand in secondHotbrands">
+            <a href="#/ahBrand/{{secondHotbrand.bid}}/{{secondHotbrand.carName}}" class="button button-clear button-light">
+              <img ng-src="{{secondHotbrand.bSrc}}" alt=""/><br/>
+              <small class="dark">{{secondHotbrand.bName_lg}}</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--用途选车-->
+  <div class="list use">
+    <a class="item">用途选车</a>
+    <h2 class="light-bg">
+      <button class="button button-outline button-positive" ui-sref="use">
+        舒适性好
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        网约车新政
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        撩妹利器
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        想买suv
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        入门代步
+      </button>
+      <button class="button button-outline button-positive" ui-sref="use">
+        创业伙伴
+      </button>
+    </h2>
+  </div>
+  <!--品牌列表-->
+  <div ng-repeat="title in titles | orderBy:title">
+    <h4 class="padding-left">{{title}}</h4>
+    <ion-list id="brands-list">
+      <a ng-repeat="brand in brandList" href="#/ahBrand/{{brand.bid}}/{{brand.bName_lg}}" class="item item-avatar" ng-if="brand.bName_sm[0]==title">
+        <img ng-src="{{brand.bSrc}}" alt=""/>
+        <h3 class="padding-vertical">{{brand.bName_lg}}</h3>
+        <hr/>
+      </a>
+    </ion-list>
+  </div>
+</ion-content>

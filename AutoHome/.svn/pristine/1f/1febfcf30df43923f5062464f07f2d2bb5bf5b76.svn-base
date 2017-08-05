@@ -1,0 +1,13 @@
+<?php
+header('Content-Type:application/json');
+require('init.php');
+$hot=16000;
+$sql='SELECT bid,bName_sm,bName_lg,bSrc FROM car_brands WHERE hotCount > $hot LIMIT 0,5';
+$result=mysqli_query($conn,$sql);
+$hotList=mysqli_fetch_all($result,MYSQLI_ASSOC);
+$output=[
+    'code'=>1,
+    'hotList'=>$hotList
+];
+echo(json_encode($output));
+?>

@@ -1,0 +1,149 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-tabs class="tabs-positive tabs-top stable-bg">
+  <ion-tab title="综述">
+    综述
+    <ion-content class="detail">
+      <div class="list" style="margin-top: 93px;">
+        <div class="item item-image">
+          <img ng-src="img/{{car.pic}}"  alt=""/>
+        </div>
+        <div class="item">
+          <h2 class="item-note text-center">
+            <i class="icon ion-android-star-outline {{assertive}}" ng-click="addCollection()" style="font-size: 30px"></i><br/>
+            收藏
+          </h2>
+          <h2>{{car.carName}}</h2>
+          <h3>新车指导价: <span class="assertive">{{car.price}}万</span></h3>
+          <h3>级别:{{cateName.cateName}}</h3>
+        </div>
+        <!--口碑印象-->
+        <div class="item" ng-if="impression">
+          <h2>口碑印象</h2>
+          <div class="row" style="border-bottom: 1px solid #ddd;">
+            <div class="col col-50" style="border-right: 1px solid #ddd;">
+              <div class="text-center">
+                <h3 class="assertive">
+                  <div>
+                <span style="position: relative;">
+                  <i class="icon ion-android-star-outline"></i>
+                  <i class="icon ion-android-star-outline"></i>
+                  <i class="icon ion-android-star-outline"></i>
+                  <i class="icon ion-android-star-outline"></i>
+                  <i class="icon ion-android-star-outline"></i>
+                  <span style="position: absolute;left:0;z-index: 10;overflow: hidden;" ng-style="starsStyle">
+                    <i class="icon ion-android-star"></i>
+                    <i class="icon ion-android-star"></i>
+                    <i class="icon ion-android-star"></i>
+                    <i class="icon ion-android-star"></i>
+                    <i class="icon ion-android-star"></i>
+                  </span>
+                </span>
+                    <span>{{score}}</span>
+                  </div>
+                </h3>
+                <p>{{scoreCount}}人参与</p>
+              </div>
+            </div>
+            <div class="col col-50">
+              <div class="text-center">
+                <p>{{cateName.cateName}}排名</p>
+                <p><span class="assertive">第1名</span>(共22个车系)</p>
+              </div>
+            </div>
+          </div>
+          <div class="list list-borderless">
+            <div class="item">
+              <p class="stable-bg padding-horizontal" style="float: left; margin: 10px;" ng-repeat="com in comments">
+                {{com.comments}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--在售&停售-->
+      <div class="list" ng-if="carModel">
+        <div class="button-bar light-bg" id="onSale">
+          <a class="button button-clear button-dark" ng-class="{active:1==onsaleIndex}" ng-click="saleToggle(1)" ng-if="engineOnsale.length!=0">
+            在售
+          </a>
+          <a class="button button-clear button-dark" ng-class="{active:2==onsaleIndex}" ng-click="saleToggle(2)" ng-if="engineOffsale.length!=0">
+            停售
+          </a>
+        </div>
+        <!--车型配置-->
+        <div ng-repeat="on in engineOnsale" ng-if="onsale">
+          <p class="item stable-bg">{{on}}</p>
+          <div ng-repeat="model in carModel">
+            <div class="item light-bg"  ng-if="model.engine==on&&model.isOnsale=='true'">
+              <h2>{{model.mName}}</h2>
+              <h2>
+                <span class="assertive" style="margin-right: 15px">{{model.dealersPrice}}万起</span>
+                <small style="font-size: 10px;color: #333;">厂商指导价:<span>{{model.facPrice}}</span>万</small>
+              </h2>
+              <h2 class="button-bar">
+                <a href="#/error" class="button button-outline button-stable button-small">
+                  参数配置
+                </a>
+                <a href="#/error" class="button button-outline button-positive button-small">
+                  询底价
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div ng-repeat="off in engineOffsale" ng-if="!onsale">
+          <p class="item stable-bg">{{off}}</p>
+          <div ng-repeat="model in carModel">
+            <div class="item light-bg"  ng-if="model.engine==off&&model.isOnsale=='false'">
+              <h2>{{model.mName}}</h2>
+              <h2>
+                <span class="assertive" style="margin-right: 15px">{{model.dealersPrice}}万起</span>
+                <small style="font-size: 10px;color: #333;">厂商指导价:<span>{{model.facPrice}}</span>万</small>
+              </h2>
+              <h2 class="button-bar">
+                <a href="#/error" class="button button-outline button-stable button-small">
+                  参数配置
+                </a>
+                <a href="#/error" class="button button-outline button-positive button-small">
+                  询底价
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ion-content>
+  </ion-tab>
+  <ion-tab title="图片">
+    图片
+    <ion-content class="detail">
+      <div class="list" style="margin-top: 93px;">
+        <div class="card" >
+          <h2>该页暂无图片</h2>
+        </div>
+      </div>
+    </ion-content>
+  </ion-tab>
+  <ion-tab title="文章">
+    文章
+    <ion-content class="detail">
+      <div class="list" style="margin-top: 93px;">
+        <div class="card">
+          <h2>该页暂无文章</h2>
+        </div>
+      </div>
+    </ion-content>
+  </ion-tab>
+  <ion-tab title="经销商">
+    经销商
+    <ion-content class="detail">
+      <div class="list" style="margin-top: 93px;">
+        <div class="card">
+          <h2>暂无经销商信息</h2>
+        </div>
+      </div>
+    </ion-content>
+  </ion-tab>
+</ion-tabs>
+

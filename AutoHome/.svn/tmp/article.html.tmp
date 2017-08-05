@@ -1,0 +1,7 @@
+<ion-content class="has-header detail">
+  <div class="list" style="margin-top: 50px;">
+    <div class="card">
+      <h2>该页暂无文章</h2>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="list">
+        <div class="item stable-bg">
+            <div class="row">
+                <div class="col col-90">
+                    <div class="bar bar-header item item-input-inset  item-borderless ">
+                        <form ng-submit="searchbyName(inputTxt.kw)" class="block">
+                            <label class="item-input-wrapper item item-input light-bg item-borderless" >
+                                <i class="icon ion-search placeholder-icon"></i>
+                                <input type="text" placeholder="请输入要搜索的关键字" ng-value="carName" ng-model="inputTxt.kw"/>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="list list-borderless" ng-if="searchList" style="min-height: 600px;">
+                        <a class="item" ng-repeat="carName in carNameList" ng-click="searchbyName(carName.carName)">
+                            <span class="assertive"></span>{{carName.carName}}
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-10">
+                    <a ng-click="back()" class="button button-clear button-positive button-block" style="margin-top: -1px; font-size: 20px">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="result">
+        <div class="list light-bg">
+            <h2 class="item item-borderless">
+                找到<span class="assertive">{{carCount}}</span>条相关结果
+            </h2>
+        </div>
+        <div class="list light-bg"  ng-repeat="car in carList" ng-if="hasdata">
+            <a href="#/ahDetail/{{car.carId}}/{{car.carName}}" class="item item-thumbnail-left item-borderless item-icon-right">
+                <img ng-src="img/{{car.pic}}" alt=""/>
+                <h2>{{car.carName}}</h2>
+                <h2 class="assertive">{{car.price}}<span>万</span></h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</ion-content>

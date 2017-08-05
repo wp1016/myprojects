@@ -1,0 +1,98 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header" id="detail">
+  <div class="list">
+    <div class="item stable-bg">
+      <div class="button-bar">
+        <a class="button button-outline button-stable" style="color:#444">
+          综述
+        </a>
+        <a class="button button-outline button-stable" style="color:#444">
+          图片
+        </a>
+        <a class="button button-outline button-stable" style="color:#444">
+          文章
+        </a>
+        <a class="button button-outline button-stable" style="color:#444">
+          经销商
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="list">
+    <div class="item item-image">
+      <img ng-src="img/{{car.pic}}"  alt=""/>
+    </div>
+    <div class="item">
+      <h2 class="item-note text-center">
+        <i class="icon ion-android-star-outline" style="font-size: 30px"></i><br/>
+        收藏
+      </h2>
+      <h2>{{car.carName}}</h2>
+      <h3>新车指导价: <span class="assertive">{{car.price}}万</span></h3>
+      <h3>级别:{{cateName.cateName}}</h3>
+    </div>
+    <!--口碑印象-->
+    <div class="item">
+      <h2>口碑印象</h2>
+      <div class="row" style="border-bottom: 1px solid #ddd;">
+        <div class="col col-50" style="border-right: 1px solid #ddd;">
+          <div class="text-center">
+            <h3 class="assertive">
+              <i class="icon ion-android-star"></i>
+              <i class="icon ion-android-star"></i>
+              <i class="icon ion-android-star"></i>
+              <i class="icon ion-android-star"></i>
+              <i class="icon ion-android-star-half"></i>
+              4.44分
+            </h3>
+            <p>14人参与</p>
+          </div>
+        </div>
+        <div class="col col-50">
+          <div class="text-center">
+            <p>{{cateName.cateName}}排名</p>
+            <p><span class="assertive">第1名</span>(共22个车系)</p>
+          </div>
+        </div>
+      </div>
+      <h2 id="impressive">
+        <span class="stable-bg padding-horizontal">
+          动力非常好
+        </span>
+        <span class="stable-bg padding-horizontal">
+          操控比较不错
+        </span>
+      </h2>
+    </div>
+  </div>
+  <div class="list">
+    <!--在售&停售-->
+    <div class="button-bar light-bg" id="onSale">
+      <a class="button button-clear button-dark active">
+        在售
+      </a>
+      <a class="button button-clear button-dark">
+        停售
+      </a>
+    </div>
+    <!--车型配置-->
+    <div class="item stable-bg">
+      4.2升 430马力
+      <div class="light-bg">
+        <h2>2014款 Spyder 4.2 FSI quattro</h2>
+        <h2>
+          <span class="assertive" style="margin-right: 15px">168.98万起</span>
+          <small style="font-size: 10px;color: #333;">厂商指导价:<span>198.80</span>万</small>
+        </h2>
+        <h2 class="button-bar">
+          <a href="#/error" class="button button-outline button-stable button-small">
+            参数配置
+          </a>
+          <a href="#/error" class="button button-outline button-positive button-small">
+            询底价
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</ion-content>

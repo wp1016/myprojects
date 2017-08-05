@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body,ul,li,img,div{margin: 0;padding: 0;}
+ul li{list-style: none;}
+img{vertical-align: middle;}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+.magnify{position: relative; border:1px solid #a2a2a2; width: 350px;margin: 100px auto;}
+.m_small{width: 350px;overflow: hidden; height: 52px; position: relative; margin: 10px 0;}
+.m_small img{height: 50px;width: 50px;}
+ul{position: relative;}
+ul li{float: left; margin: 0 5px;}
+ul li img{border:1px solid #f2f2f2;}
+ul li.on img{border-color: #f00;}
+.m_large{display: none; overflow: hidden; width: 400px;height: 400px;position: absolute;left:351px;border:1px solid #a2a2a2;}
+.large_wrap{width: 350px;height: 350px;overflow: hidden; position: relative;}
+.m_large img{position: relative;left: 0;top: 0;}
+.m_middle{z-index: 2; position: relative; width: 350px;height: 350px;}
+.m_middle img{max-width: 350px;max-height: 350px; position: relative;z-index: 3;display: block;margin: 0 auto;}
+.mask_wrap{z-index: 10; width: 350px;height: 350px;position: absolute; top: 0;left: 0;cursor: move;}
+.m_mask{display: none; z-index: 5; position: absolute;top:0; left: 0; width: 175px;height: 175px;background: #ffa;opacity: .5;}
+.small_wrap{margin: 0 20px; height: 52px;width: 310px;overflow: hidden;}
+.btn{position: absolute;top: 0px; width: 17px;height: 51px; background: url(../images/picshopArr.gif) 0 0 no-repeat;}
+.btn-prev{left:3px;}
+.btn-next{right: 3px;background-position: -17px 0;}

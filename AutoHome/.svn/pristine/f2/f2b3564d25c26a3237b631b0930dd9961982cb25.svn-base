@@ -1,0 +1,16 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="list">
+        <h2>收藏车型</h2>
+        <div class="item">
+            <h1>您暂时没有收藏任何车型</h1>
+        </div>
+        <h2>浏览记录</h2>
+        <div class="item">
+            奔驰E级
+        </div>
+        <div class="item">
+            桑塔纳a
+        </div>
+    </div>
+</ion-content>

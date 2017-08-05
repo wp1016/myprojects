@@ -1,0 +1,7 @@
+<ion-header-bar class="positive-bg bar-header">
+  <button class="button button-clear button-light icon ion-android-arrow-back"></button>
+  &nbsp;&nbsp;&nbsp;
+  <button class="button button-clear button-light icon ion-close-round" ng-if="notMain"></button>
+  <h1 class="title light">{{siteTitle}}</h1>
+  <button class="button button-clear button-light icon ion-more"></button>
+</ion-header-bar>

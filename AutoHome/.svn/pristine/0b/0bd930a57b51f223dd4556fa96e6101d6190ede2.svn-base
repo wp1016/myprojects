@@ -1,0 +1,229 @@
+/**
+ * Created by Administrator on 2017/2/24.
+ */
+  //配置路由模块
+var app=angular.module('myApp',['ionic']);
+app.config(function ($stateProvider,$urlRouterProvider,$ionicConfigProvider) {
+  //$ionicConfigProvider.tabs.position('bottom');
+  $stateProvider
+  .state('main',{//主页
+      url:'/ahMain',
+      templateUrl:'tpl/main.html',
+      controller:'mainCtrl'
+    })
+  .state('new',{//上市新车
+      url:'/ahNew',
+      templateUrl:'tpl/new.html',
+      controller:'newCtrl'
+    })
+  .state('hot',{//热门车型
+      url:'/ahHot',
+      templateUrl:'tpl/hot.html',
+      controller:'hotCtrl'
+    })
+  .state('hotSales',{//热销车型
+      url:'/ahHotSales',
+      templateUrl:'tpl/hotSales.html',
+      controller:'hotSaleCtrl'
+    })
+  .state('userCenter',{//用户中心
+      url:'/ahUserCenter',
+      templateUrl:'tpl/userCenter.html'
+    })
+  .state('filter',{//条件选车
+      url:'/ahFilter',
+      templateUrl:'tpl/filter.html'
+    })
+  .state('brand',{//品牌车型
+      url:'/ahBrand/:id/:bname',
+      templateUrl:'tpl/brand.html',
+      controller:'brandCtrl'
+    })
+  .state('search',{//搜索页
+      url:'/ahSearch',
+      templateUrl:'tpl/search.html',
+      controller:'searchCtrl'
+    })
+  .state('use',{//用途选车
+      url:'/ahUse',
+      templateUrl:'tpl/use.html'
+    })
+  .state('detail',{//车辆详情
+      url:'/ahDetail/:id/:cname',
+      templateUrl:'tpl/detail.html',
+      controller:'detailCtrl'
+    })
+  .state('error',{//错误页面
+      url:'/ahError',
+      templateUrl:'tpl/error.html',
+      controller:'errorCtrl'
+    })
+  $urlRouterProvider.otherwise('/ahMain');
+})
+app.controller('parentCtrl',['$scope','$rootScope',
+  function ($scope,$rootScope) {
+      $rootScope.notMain=true;
+      $scope.notMain=$rootScope.notMain;
+    $scope.back= function () {
+        if(!$rootScope.notMain){
+            history.back();
+        }
+    }
+  }])
+//主页
+app.controller('mainCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='汽车之家';
+        $rootScope.notMain=false;
+        $scope.notMain=$rootScope.notMain;
+        $scope.brandList=[];
+        $http.get('data/main.php')
+        .success(function (obj) {
+            var data=obj.brandList;
+            var t=[];
+            angular.forEach(data, function (v,i) {
+                t.push(v.bName_sm.slice(0,1));
+            })
+            //t去重
+            var res = [];
+            var json = {};
+            for(var i = 0; i < t.length; i++){
+                if(!json[t[i]]){
+                    res.push(t[i]);
+                    json[t[i]] = 1;
+                }
+            }
+            $scope.titles=res;
+            $scope.brandList=obj.brandList;
+            $scope.firstHotbrands=obj.hotbrands.slice(0,5);
+            $scope.secondHotbrands=obj.hotbrands.slice(5,10);
+            $scope.count=obj.count[0];
+        })
+    }])
+//品牌页
+app.controller('brandCtrl',['$scope','$http','$stateParams','$rootScope',
+    function ($scope,$http,$stateParams,$rootScope) {
+        $rootScope.siteTitle=$stateParams.bname;
+        $http.get('data/brand.php?bid='+$stateParams.id)
+        .success(function (obj) {
+            var t=[];
+            angular.forEach(obj.carList, function (v) {
+                t.push(v.facName);
+            })
+            //t去重
+            var res = [];
+            var json = {};
+            for(var i = 0; i < t.length; i++){
+                if(!json[t[i]]){
+                    res.push(t[i]);
+                    json[t[i]] = 1;
+                }
+            }
+            $scope.titles=res;
+            $scope.carList=obj.carList;
+        })
+    }])
+//详情页
+app.controller('detailCtrl',['$scope','$http','$stateParams','$rootScope',
+    function ($scope,$http,$stateParams,$rootScope) {
+        $rootScope.siteTitle=$stateParams.cname;
+        $http.get('data/detail.php?carId='+$stateParams.id)
+            .success(function (obj) {
+                $scope.car=obj.car;
+                $scope.cateName=obj.cateName;
+            })
+    }])
+//错误页面
+app.controller('errorCtrl',['$rootScope',
+    function ($rootScope) {
+        $rootScope.siteTitle='汽车之家';
+    }])
+//热门车型
+app.controller('hotCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='热门车型';
+        $http.get('data/hot.php')
+        .success(function (obj) {
+                $scope.hotList=obj.carList;
+            })
+        $scope.loadCate = function () {
+            if(arguments.length!=0){
+                $http
+                    .get('data/hot.php?cateId=' + arguments[0])
+                    .success(function (data) {
+                        $scope.hotList = data.carList;
+                    })
+            }
+            $http
+                .get('data/hot.php')
+                .success(function (data) {
+                    $scope.hotList = data.carList;
+                })
+        }
+    }])
+//热销车型
+app.controller('hotSaleCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='热销车型';
+        $http.get('data/hotsales.php')
+            .success(function (obj) {
+                $scope.hotList=obj.carList;
+            })
+        $scope.loadCate = function () {
+            if(arguments.length!=0){
+                $http
+                    .get('data/hotsales.php?cateId=' + arguments[0])
+                    .success(function (data) {
+                        $scope.hotList = data.carList;
+                    })
+            }
+            $http
+                .get('data/hotsales.php')
+                .success(function (data) {
+                    $scope.hotList = data.carList;
+                })
+        }
+    }])
+//上市新车
+app.controller('newCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='上市新车';
+        $http.get('data/new.php')
+            .success(function (obj) {
+                $scope.newList=obj.carList;
+            })
+    }])
+//搜索页
+app.controller('searchCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='搜索';
+        $scope.searchList=false;
+        $scope.inputTxt={kw:''};
+        $scope.hasdata=false;
+        $scope.result=false;
+        $scope.$watch('inputTxt.kw', function () {
+            if($scope.inputTxt.kw)
+            {
+                $scope.searchList=true;
+                $http
+                  .get('data/search_bykw.php?kw=' + $scope.inputTxt.kw)
+                  .success(function (data) {
+                      $scope.carNameList = data;
+                  })
+            }
+        $scope.searchbyName= function (carName) {
+            $scope.searchList=false;
+            $scope.result=true;
+            $scope.carName=carName;
+            $http
+              .get('data/search_byname.php?carName=' + carName)
+              .success(function (data) {
+                    $scope.carCount=parseInt(data.carCount[0]);
+                    if($scope.carCount!=0){
+                        $scope.hasdata=true;
+                    }
+                    $scope.carList=data.carList;
+                })
+            }
+        });
+    }])

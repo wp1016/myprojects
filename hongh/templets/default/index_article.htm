@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="IE=100" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="applicable-device"content="pc,mobile" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/sub.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="{dede:global.cfg_templets_skin/}/css/responsive.css" type="text/css" rel="stylesheet" media="screen" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<!--[if lt IE 9]><script  type="text/javascript"  src="{dede:global.cfg_templets_skin/}/js/css3-mediaqueries.js"></script><![endif]--> 
+<script src="{dede:global.cfg_templets_skin/}/js/nav.js" type="text/javascript"></script> 
+
+ <script src="{dede:global.cfg_templets_skin/}/js/sohuflash_1.js" type="text/javascript"></script>
+
+ <!--[if IE 6]>
+<script>
+ DD_belatedPNG.fix('.sub_contact_l');
+ DD_belatedPNG.fix('.cul-nav ul li .cul-nav-bg');
+</script>
+<![endif]-->
+</head>
+<body>
+    {dede:include filename="head.htm"/}
+
+    <div class="sub_ban">
+        <img src='{dede:global.cfg_templets_skin/}/images/ban_1.jpg
+' class="img" />
+    </div>
+    <div class="sub_menu">
+        <ul id="secmenu">
+            <li class="cur">  {dede:field name='typename'/}
+</li>
+            {dede:channel type='son' noself='yes'}
+            <li id='leftMenu_101001'><a href='[field:typelink/]'>[field:typename/]</a></li>
+            {/dede:channel}
+
+
+        </ul>
+        <span> {dede:field name='position'/}
+</span>
+    </div>
+
+    <div class="content">
+   <div class="sub_about">
+{dede:field.content/}
+<div class="_layer"><b></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--main end-->
+
+    </div>
+
+    {dede:include filename="foot.htm"/}
+</body>
+</html>
+
+
+
+

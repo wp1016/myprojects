@@ -1,0 +1,58 @@
+#brands .item,#use .item,#brands-list .item{
+  border:none;
+}
+.button-clear.active, .button-clear.activated{
+  opacity: 1;
+}
+.button-clear{
+  min-height: 42px;
+}
+.carDetail a.item{
+  border:none;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+.use h2{
+  margin-top: 0;
+}
+.use h2>button,.use h2>a{
+  margin: 10px;
+}
+#brands-list hr{
+  border-color: #aaa;
+  border-top-width: 0;
+}
+.img-responsive{
+  width: 100%;
+}
+.item-avatar > img:first-child{
+  border-radius: 0;
+}
+
+#detail h2,#detail h3{
+  margin: 1rem;
+}
+#impressive>span{
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+#onSale .button.active,#onSale .button.activated{
+  border-top-width: 0;
+  border-bottom: 2px solid #0c60ee;
+  color: #0c60ee;
+  opacity: 1;
+}
+a.button.button-outline.button-light.active,a.button.button-outline.button-light.activated{
+  background-color: #fff;
+  border: 1px solid #0c60ee;
+  color: #0c60ee;
+}
+a.button.button-outline.button-light.active>span,
+button.button.button-outline.button-light.active>span,
+button.button.button-outline.button-light.active>span,
+a.button.button-outline.button-light.activated>span{
+  color: #0c60ee;
+}

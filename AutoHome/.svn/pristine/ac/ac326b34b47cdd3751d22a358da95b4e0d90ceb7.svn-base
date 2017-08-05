@@ -1,0 +1,140 @@
+/**
+ * Created by Administrator on 2017/2/24.
+ */
+  //配置路由模块
+var app=angular.module('myApp',['ionic']);
+app.config(function ($stateProvider,$urlRouterProvider,$ionicConfigProvider) {
+  //$ionicConfigProvider.tabs.position('bottom');
+  $stateProvider
+  .state('main',{//主页
+      url:'/ahMain',
+      templateUrl:'tpl/main.html',
+      controller:'mainCtrl'
+    })
+  .state('new',{//上市新车
+      url:'/ahNew',
+      templateUrl:'tpl/new.html'
+    })
+  .state('hot',{//热门车型
+      url:'/ahHot',
+      templateUrl:'tpl/hot.html',
+      controller:'hotCtrl'
+    })
+  .state('hotSales',{//热销车型
+      url:'/ahHotSales',
+      templateUrl:'tpl/hotSales.html'
+    })
+  .state('userCenter',{//用户中心
+      url:'/ahUserCenter',
+      templateUrl:'tpl/userCenter.html'
+    })
+  .state('filter',{//条件选车
+      url:'/ahFilter',
+      templateUrl:'tpl/filter.html'
+    })
+  .state('brand',{//品牌车型
+      url:'/ahBrand/:id/:bname',
+      templateUrl:'tpl/brand.html',
+      controller:'brandCtrl'
+    })
+  .state('search',{//搜索页
+      url:'/ahSearch',
+      templateUrl:'tpl/search.html'
+    })
+  .state('use',{//用途选车
+      url:'/ahUse',
+      templateUrl:'tpl/use.html'
+    })
+  .state('detail',{//车辆详情
+      url:'/ahDetail/:id/:cname',
+      templateUrl:'tpl/detail.html',
+      controller:'detailCtrl'
+    })
+  .state('error',{//错误页面
+      url:'/ahError',
+      templateUrl:'tpl/error.html',
+      controller:'errorCtrl'
+    })
+  $urlRouterProvider.otherwise('/ahMain');
+})
+app.controller('parentCtrl',['$scope','$state',
+  function ($scope,$state) {
+      $scope.notMain=true;
+    $scope.jump= function (stateName,arg) {
+      $state.go(stateName,arg);
+    }
+  }])
+//主页
+app.controller('mainCtrl',['$scope','$http','$rootScope',
+    function ($scope,$http,$rootScope) {
+        $rootScope.siteTitle='汽车之家';
+        $scope.notMain=false;
+        $scope.brandList=[];
+        $http.get('data/main.php')
+        .success(function (obj) {
+            var data=obj.brandList;
+            var t=[];
+            angular.forEach(data, function (v,i) {
+                t.push(v.bName_sm.slice(0,1));
+            })
+            //t去重
+            var res = [];
+            var json = {};
+            for(var i = 0; i < t.length; i++){
+                if(!json[t[i]]){
+                    res.push(t[i]);
+                    json[t[i]] = 1;
+                }
+            }
+            $scope.titles=res;
+            $scope.brandList=obj.brandList;
+        })
+    }])
+//品牌页
+app.controller('brandCtrl',['$scope','$http','$stateParams','$rootScope',
+    function ($scope,$http,$stateParams,$rootScope) {
+        $rootScope.siteTitle=$stateParams.bname;
+        $http.get('data/brand.php?bid='+$stateParams.id)
+        .success(function (obj) {
+            var t=[];
+            angular.forEach(obj.carList, function (v) {
+                t.push(v.facName);
+            })
+            //t去重
+            var res = [];
+            var json = {};
+            for(var i = 0; i < t.length; i++){
+                if(!json[t[i]]){
+                    res.push(t[i]);
+                    json[t[i]] = 1;
+                }
+            }
+            $scope.titles=res;
+            $scope.carList=obj.carList;
+        })
+    }])
+//详情页
+app.controller('detailCtrl',['$scope','$http','$stateParams','$rootScope',
+    function ($scope,$http,$stateParams,$rootScope) {
+        $rootScope.siteTitle=$stateParams.cname;
+        $http.get('data/detail.php?carId='+$stateParams.id)
+            .success(function (obj) {
+                $scope.car=obj.car;
+                $scope.cateName=obj.cateName;
+            })
+    }])
+//错误页面
+app.controller('errorCtrl',['$rootScope',
+    function ($rootScope) {
+        $rootScope.siteTitle='汽车之家';
+    }])
+//热门车型
+app.controller('hotCtrl',['$scope','$http','$stateParams','$rootScope',
+    function ($scope,$http,$stateParams,$rootScope) {
+        $rootScope.siteTitle='热门车型';
+        $http.get('data/hot.php')
+        .success(function (obj) {
+                console.log(obj);
+                $scope.hotList=obj.carList;
+            })
+    }])

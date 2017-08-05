@@ -1,0 +1,7 @@
+<ion-content class="has-header detail">
+  <div class="list" style="margin-top: 50px;">
+    <div class="card">
+      <h2>暂无经销商信息</h2>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>模仿汽车之家小程序spa应用</title>
+  <link rel="stylesheet" href="css/ionic.css"/>
+  <link rel="stylesheet" href="css/autoHome.css"/>
+</head>
+<body class="stable-bg" ng-controller="parentCtrl">
+<div ui-view class="page" ng-animate-swap="">
+
+</div>
+
+<script src="js/ionic.bundle.js"></script>
+<script src="js/autoHome.js"></script>
+</body>
+</html>

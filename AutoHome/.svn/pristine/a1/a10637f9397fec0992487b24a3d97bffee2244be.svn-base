@@ -1,0 +1,121 @@
+SET NAMES 'UTF8';
+DROP DATABASE IF EXISTS autoHome;
+CREATE DATABASE autoHome CHARSET=UTF8;
+USE autoHome;
+
+CREATE TABLE ah_user(
+    uid INT PRIMARY KEY AUTO_INCREMENT,
+    uName VARCHAR(12),
+    uPwd VARCHAR(18)
+);
+INSERT INTO ah_user VALUES
+(NULL,'admin','admin');
+
+CREATE TABLE car_cate(
+    cateId INT PRIMARY KEY AUTO_INCREMENT,
+    cateName VARCHAR(12)
+);
+INSERT INTO car_cate VALUES
+(NULL,'轿车'),
+(NULL,'SUV'),
+(NULL,'MPV'),
+(NULL,'跑车');
+
+CREATE TABLE car_brands(
+    bid INT PRIMARY KEY AUTO_INCREMENT,
+    bName_sm VARCHAR(12),
+    bName_lg VARCHAR(12),
+    bSrc VARCHAR(32)
+);
+INSERT INTO car_brands VALUES
+(NULL,'AD','奥迪','img/aodi/1_sm.jpg'),
+(NULL,'ASDMD','阿斯顿·马丁','img/asdmd/1_sm.jpg'),
+(NULL,'BM','宝马','img/bmw/1_sm.jpg'),
+(NULL,'BC','奔驰','img/benzi/1_sm.jpg'),
+(NULL,'BL','宾利','img/binli/1_sm.jpg'),
+(NULL,'BJD','布加迪','img/bujiadi/1_sm.jpg'),
+(NULL,'CA','长安','img/changan/1_sm.jpg'),
+(NULL,'DS','DS','img/ds/1_sm.jpg'),
+(NULL,'DZ','大众','img/dazhong/1_sm.jpg'),
+(NULL,'BT','本田','img/bentian/1_sm.jpg'),
+(NULL,'XD','现代','img/xiandai/1_sm.jpg'),
+(NULL,'FT','丰田','img/fengtian/1_sm.jpg'),
+(NULL,'JLQC','吉利汽车','img/jlqc/1_sm.jpg'),
+(NULL,'BK','别克','img/bieke/1_sm.jpg'),
+(NULL,'FT','福特','img/fute/1_sm.jpg');
+
+
+CREATE TABLE car_detail(
+    carId INT PRIMARY KEY AUTO_INCREMENT,
+    bId INT,
+    brandName VARCHAR(10),
+    facName VARCHAR(20),
+    carName VARCHAR(20),
+    price VARCHAR(20),
+    pic VARCHAR(32),
+    cateId INT,
+    hotCount INT,
+    saleCount INT,
+    listingTime BIGINT
+);
+INSERT INTO car_detail VALUES
+(NULL,1,'奥迪','一汽-大众奥迪','奥迪A4L','29.98-43.00','aodi/yqdz_a4l_lg.jpg',1,12035,93614,1455120000000),
+(NULL,1,'奥迪','一汽-大众奥迪','奥迪A6L','41.88-74.60','aodi/yqdz_a6l_lg.jpg',1,11234,75098,1366992000000),
+(NULL,1,'奥迪','奥迪(进口)','奥迪R8','182.30-253.80','aodi/adjk_r8_lg.jpg',4,24814,18683,1505318400000),
+(NULL,1,'奥迪','奥迪(进口)','奥迪TTS','68.18-72.98','aodi/adjk_tts_lg.jpg',4,22812,81061,1451750400000),
+(NULL,2,'阿斯顿·马丁','阿斯顿·马丁','V8 Vantage','198.80-218.80','asdmd/asdmd_v8_lg.jpg',4,27468,77778,1423756800000),
+(NULL,2,'阿斯顿·马丁','阿斯顿·马丁','V12 Vantage','289.80-309.80','asdmd/asdmd_v12_lg.jpg',4,24221,20296,1383840000000),
+(NULL,2,'阿斯顿·马丁','阿斯顿·马丁','阿斯顿·马丁DB9','341.80-388.80','asdmd/asdmd_db9_lg.jpg',4,27354,100094,1488816000000),
+(NULL,2,'阿斯顿·马丁','阿斯顿·马丁','阿斯顿·马丁DB11','325.90-328.80','asdmd/asdmd_db11_lg.jpg',4,26729,93582,1366387200000),
+(NULL,3,'宝马','华晨宝马','宝马3系','28.80-48.69','bmw/hcbm_bmw3_lg.jpg',1,14324,70397,1416700800000),
+(NULL,3,'宝马','华晨宝马','宝马5系','43.56-77.86','bmw/hcbm_bmw5_lg.jpg',1,23861,21193,1486051200000),
+(NULL,3,'宝马','宝马(进口)','宝马7系','89.80-265.80','bmw/bmjk_bmw7_lg.jpg',1,24526,22435,1399046400000),
+(NULL,3,'宝马','宝马(进口)','宝马i8','198.80-209.80','bmw/bmjk_bmwi8_lg.jpg',4,21479,96852,1376668800000),
+(NULL,3,'宝马','宝马(进口)','宝马z4','58.30-90.90','bmw/bmjk_bmwz4_lg.jpg',4,19104,75410,1473523200000),
+(NULL,3,'宝马','宝马M','宝马M5','159.70','bmw/bmM_bmwm5_lg.jpg',1,14901,24101,1456070400000),
+(NULL,3,'宝马','宝马M','宝马X6 M','192.80','bmw/bmM_bmwx6m_lg.jpg',2,16481,106451,1483286400000),
+(NULL,4,'奔驰','北京奔驰','奔驰GLC','39.60-57.90','benzi/bjbc_benziglc_lg.jpg',2,19009,39085,1359993600000),
+(NULL,4,'奔驰','福建奔驰','奔驰V级','48.90-61.80','benzi/fjbc_benziv_lg.jpg',3,18992,14834,1455552000000),
+(NULL,4,'奔驰','奔驰进口','奔驰GLS','107.60-159.80','benzi/bcjk_benzigls_lg.jpg',2,15024,80297,1459440000000),
+(NULL,4,'奔驰','奔驰进口','奔驰SLC','55.96-68.80','benzi/bcjk_benzislc_lg.jpg',4,14461,107779,1390406400000),
+(NULL,4,'奔驰','梅赛德斯-AMG','奔驰GLS AMG','199.80','benzi/bcjk_benzislc_lg.jpg',1,8423,55647,1433260800000),
+(NULL,4,'奔驰','梅赛德斯-AMG','AMG GT','141.80-196.80','benzi/bcjk_benzislc_lg.jpg',4,20009,29507,1507766400000),
+(NULL,4,'奔驰','梅赛德斯-迈巴赫','迈巴赫S级','146.80-288.80','benzi/msdsMbh_mbhs_lg.jpg',1,22106,97871,1459699200000),
+(NULL,5,'宾利','宾利','慕尚','498.00-555.80','binli/bl_ms_lg.jpg',1,17321,90390,1405785600000),
+(NULL,5,'宾利','宾利','添越','398.00-480.00','binli/bl_ty_lg.jpg',2,27994,38420,1447372800000),
+(NULL,6,'布加迪','布加迪','威航','2500','bujiadi/bjd_wh_lg.jpg',4,20713,13277,1504713600000),
+(NULL,7,'长安','长安汽车','长安CS35','7.89-9.89','changan/ca_cs35_lg.jpg',2,24329,90177,1500652800000),
+(NULL,7,'长安','长安汽车','长安CS75','9.28-16.28','changan/ca_cs75_lg.jpg',2,12744,81741,1407686400000),
+(NULL,8,'DS','长安标致雪铁龙','DS 5','21.99-34.59','ds/cabzxtl_ds5_lg.jpg',1,18793,14886,1467475200000),
+(NULL,8,'DS','长安标致雪铁龙','DS 6','19.39-30.19','ds/cabzxtl_ds6_lg.jpg',2,26434,55932,1357401600000),
+(NULL,8,'DS','雪铁龙(进口)','DS 3','19.98-27.98','ds/xtljk_ds3_lg.jpg',3,26636,25935,1501862400000),
+(NULL,8,'DS','雪铁龙(进口)','DS 4','24.28-27.28','ds/xtljk_ds4_lg.jpg',1,23672,21972,1510876800000),
+(NULL,9,'大众','上汽大众','途昂','暂无报价','dazhong/sqdz_ta_lg.jpg',2,12873,89324,1397404800000),
+(NULL,9,'大众','上汽大众','途观','19.98-31.58','dazhong/sqdz_tg_lg.jpg',2,19893,11549,1494432000000),
+(NULL,9,'大众','上汽大众','凌渡','14.59-22.89','dazhong/sqdz_ld_lg.jpg',1,15916,72013,1470240000000),
+(NULL,9,'大众','一汽-大众','高尔夫','12.19-23.99','dazhong/yqdz_glf_lg.jpg',3,24772,95461,1473696000000),
+(NULL,9,'大众','一汽-大众','一汽-大众CC','25.28-34.28','dazhong/yqdz_cc_lg.jpg',1,24685,106123,1464019200000),
+(NULL,9,'大众','大众(进口)','途锐','65.88-90.88','dazhong/dzjk_tr_lg.jpg',2,18852,89061,1458489600000),
+(NULL,9,'大众','大众(进口)','辉腾','79.58-149.98','dazhong/dzjk_ht_lg.jpg',1,14041,83725,1375977600000),
+(NULL,10,'本田','东风本田','思域','11.59-16.99','bentian/dfbt_sy_lg.jpg',1,13979,78179,1443801600000),
+(NULL,10,'本田','东风本田','本田CR-V','17.98-24.98','bentian/dfbt_crv_lg.jpg',2,8111,31791,1437840000000),
+(NULL,10,'本田','广汽本田','本田歌斯图','25.98-33.58','bentian/gqbt_gst_lg.jpg',2,16881,45228,1439308800000),
+(NULL,10,'本田','广汽本田','本田雅阁','16.98-27.98','bentian/gqbt_yg_lg.jpg',1,12230,79541,1391443200000),
+(NULL,10,'本田','本田(进口)','INSIGHT','20.98-20.98','bentian/btjk_insight_lg.jpg',1,8985,98443,1363276800000),
+(NULL,11,'别克','上汽通用别克','君威','17.89-27.99','bieke/sqtybk_jw_lg.jpg',1,11323,49460,1407427200000),
+(NULL,11,'别克','上汽通用别克','昂科拉','13.99-18.99','bieke/sqtybk_akl_lg.jpg',2,22856,52672,1492617600000),
+(NULL,11,'别克','别克(进口)','昂科雷','50.90-64.90','bieke/bkjk_akl_lg.jpg',2,21298,36074,1432310400000),
+(NULL,12,'丰田','广汽丰田','凯美瑞','18.78-32.98','fengtian/gqft_cmr_lg.jpg',1,15057,55698,1414368000000),
+(NULL,12,'丰田','广汽丰田','汉兰达','23.98-42.28','fengtian/gqft_hld_lg.jpg',2,19892,38717,1443974400000),
+(NULL,12,'丰田','一汽丰田','锐志','20.98-31.48','fengtian/yqft_rz_lg.jpg',1,22855,87294,1412179200000),
+(NULL,12,'丰田','一汽丰田','兰德酷路泽','77.10-119.40','fengtian/yqft_ldklz_lg.jpg',2,15912,65671,1393257600000),
+(NULL,12,'丰田','丰田进口','丰田86','24.98-28.78','fengtian/gqft_cmr_lg.jpg',4,27059,60776,1462550400000),
+(NULL,13,'福特','长安福特','蒙迪欧','17.98-31.98','fute/caft_mdo_lg.jpg',1,22243,29063,1368633600000),
+(NULL,13,'福特','长安福特','翼虎','19.38-27.58','fute/caft_yh_lg.jpg',2,8521,65183,1416441600000),
+(NULL,13,'福特','江铃福特','撼路者','26.58-36.08','fute/jlft_hlz_lg.jpg',2,14337,91928,1410364800000),
+(NULL,13,'福特','福特(进口)','Mustang','39.98-70.50','fute/ftjk_mustang_lg.jpg',4,20937,71709,1393948800000),
+(NULL,14,'吉利汽车','吉利汽车','博瑞','11.98-22.98','jlqc/jlqc_br_lg.jpg',1,27760,57187,1435334400000),
+(NULL,14,'吉利汽车','吉利汽车','博越','9.88-15.78','jlqc/jlqc_by_lg.jpg',2,11207,87113,1414368000000),
+(NULL,15,'现代','北京现代','悦纳','7.28-10.58','xiandai/bjxd_yn_lg.jpg',1,26056,97650,1417046400000),
+(NULL,15,'现代','北京现代','朗动','10.58-12.78','xiandai/bjxd_ld_lg.jpg',1,19341,54836,1374163200000),
+(NULL,15,'现代','现代(进口)','索纳塔(进口)','29.38-29.38','xiandai/xdjk_sntjk_lg.jpg',1,18450,90285,1490371200000);

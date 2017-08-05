@@ -1,0 +1,12 @@
+<?php
+    header('Content-Type:application/json');
+     require('init.php');
+    $sql='SELECT bid,bName_sm,bName_lg,bSrc FROM car_brands LIMIT 0,5';
+    $result=mysqli_query($conn,$sql);
+    $brandList=mysqli_fetch_all($result,MYSQLI_ASSOC);
+    $output=[
+        'code'=>1,
+        'brandList'=>$brandList
+    ];
+    echo(json_encode($output));
+?>

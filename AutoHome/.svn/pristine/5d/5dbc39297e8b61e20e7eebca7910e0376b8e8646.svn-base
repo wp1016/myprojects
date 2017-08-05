@@ -1,0 +1,9 @@
+<?php
+header("Content-Type:application/json");
+@$carName=$_REQUEST['carName'];
+require('init.php');
+$sql="SELECT carId,facName,bId,carName,pic,price FROM car_detail WHERE carName like '%$carName%'";
+$result=mysqli_query($conn,$sql);
+$carName=mysqli_fetch_all($result,MYSQLI_ASSOC);
+echo json_encode($carName);
+?>

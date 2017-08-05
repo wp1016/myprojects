@@ -1,0 +1,16 @@
+<?php
+header("Content-Type:application/json");
+@$carName=$_REQUEST['carName'];
+require('init.php');
+$sql="SELECT carId,facName,bId,carName,pic,price FROM car_detail WHERE carName like '%$carName%'";
+$result=mysqli_query($conn,$sql);
+$carName=mysqli_fetch_all($result,MYSQLI_ASSOC);
+$sql="SELECT COUNT(carId)FROM car_detail WHERE carName like '%$carName%'";
+$result=mysqli_query($conn,$sql);
+$carCount=mysqli_fetch_row($result);
+$output=[
+    'carName'=>$carName,
+    'carCount'=>$carCount
+];
+echo json_encode($output);
+?>

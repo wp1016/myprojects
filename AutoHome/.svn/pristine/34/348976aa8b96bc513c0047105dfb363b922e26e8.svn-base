@@ -1,0 +1,33 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="row light-bg">
+        <div class="col col-25">
+            <a class="button button-outline button-light button-block active" ng-click="loadMore()">
+                <span class="dark">全部</span>
+            </a>
+        </div>
+        <div class="col col-25">
+            <a class="button button-outline button-light button-block">
+                <span class="dark">轿车</span>
+            </a>
+        </div>
+        <div class="col col-25">
+            <a class="button button-outline button-light button-block">
+                <span class="dark">SUV</span>
+            </a>
+        </div>
+        <div class="col col-25">
+            <a class="button button-outline button-light button-block">
+                <span class="dark">跑车</span>
+            </a>
+        </div>
+    </div>
+    <div class="list carDetail">
+        <a href="#/ahDetail/{{hot.carId}}/{{hot.carName}}" class="item item-thumbnail-left item-icon-right" ng-repeat="hot in hotList">
+            <img ng-src="img/{{hot.pic}}" alt=""/>
+            <h2>{{hot.carName}}</h2>
+            <h2 class="assertive">{{hot.price}}<small>万</small></h2>
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+    </div>
+</ion-content>

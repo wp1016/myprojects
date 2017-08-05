@@ -1,0 +1,19 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="list">
+        <p class="item item-stable item-borderless">
+            收藏车型
+        </p>
+        <a class="item item-borderless" ng-hide="hasCollection">
+            您暂时没有收藏任何车型
+        </a>
+        <a ng-if="hasCollection" href="#/ahDetail/{{collection.carId}}/{{collection.carName}}" class="item" ng-repeat="collection in collectionList">{{collection.carName}}</a>
+    </div>
+    <div class="list">
+        <p class="item item-stable item-borderless">
+            浏览记录
+        </p>
+        <a href="#/ahDetail/{{browse.carId}}/{{browse.carName}}" class="item" ng-repeat="browse in browserList">{{browse.carName}}</a>
+        </div>
+    </div>
+</ion-content>

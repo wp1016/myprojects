@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div style="width: 100%; height: 500px;">
+    <select class="nicesele2 ">
+        <option data-level="AAA"></option>
+        <option value="1">aaa1</option>
+        <option value="2">aaa2</option>
+        <option value="3">aaa3</option>
+        <option data-level="BBB"></option>
+        <option value="4">bbb1</option>
+        <option value="5">bbb2</option>
+        <option value="6">bbb3</option>
+    </select>
+    <div class="nicesel2 nice-select2" style="width: 200px;height: 40px;">
+        <span class="current">aaa</span>
+        <ul class="list">
+            <li class="sel_level option">AAA</li>
+            <li class="option" data-value="1">aaa</li>
+            <li class="option" data-value="2">aaa</li>
+            <li class="option" data-value="3">aaa</li>
+            <li class="sel_level option">BBB</li>
+            <li class="option" data-value="4"></li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/nice-select2.js"></script>
+<script>
+    $('.nicesele2').niceSelect2();
+</script>
+</body>
+</html>

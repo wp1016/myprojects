@@ -1,0 +1,11 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<ion-content class="has-header">
+    <div class="list carDetail">
+        <a href="#/detail" class="item item-thumbnail-left item-icon-right">
+            <img ng-src="img/bmw/bmjk_bmw7_lg.jpg" alt=""/>
+            <h2>宝马7系</h2>
+            <h2 class="assertive">23.88-37.98<span>万</span></h2>
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+    </div>
+</ion-content>

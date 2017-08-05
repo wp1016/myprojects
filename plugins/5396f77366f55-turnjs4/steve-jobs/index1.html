@@ -1,0 +1,47 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<link rel="stylesheet" href="css/basic.css">
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background: url(pics/05.jpg);"></div>
+			<div style="background: url(pics/06.jpg);"></div>
+			<div style="background: url(pics/07.jpg);"></div>
+			<div style="background: url(pics/08.jpg);"></div>
+			<div style="background: url(pics/09.jpg);"></div>
+			<div style="background: url(pics/10.jpg);"></div>
+			<div style="background: url(pics/11.jpg);"></div>
+		</div>
+	</div>
+	<div id="slider-bar" class="turnjs-slider">
+		<div id="slider"></div>
+	</div>
+</div>
+
+<script>
+	var flipbok=$('.flipbook');
+	flipbok.turn({
+        width:922,
+        height:600,
+        // Elevation
+        elevation: 50,
+        // Enable gradients
+        gradients: true,
+        // Auto center this flipbook
+        autoCenter: true,
+		duration:1000,
+    })
+</script>
+
+</body>
+</html>

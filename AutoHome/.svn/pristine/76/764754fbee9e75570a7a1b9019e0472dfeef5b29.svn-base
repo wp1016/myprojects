@@ -1,0 +1,12 @@
+<?php
+    header("Content-Type:application/json");
+    require('init.php');
+    $hotCount=16000;
+    $sql="SELECT carId,facName,bId,carName,pic,price FROM car_detail WHERE hotCount > $hotCount LIMIT 0,5";
+    $result=mysqli_query($conn,$sql);
+    $carList=mysqli_fetch_all($result,MYSQLI_ASSOC);
+    $output=[
+        'carList'=>$carList
+    ];
+    echo json_encode($output);
+?>
