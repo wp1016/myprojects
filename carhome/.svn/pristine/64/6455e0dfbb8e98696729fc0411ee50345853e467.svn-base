@@ -1,0 +1,22 @@
+<ion-header-bar ng-include="'tpl/include/header.html'"></ion-header-bar>
+<div class="bar bar-subheader" style="padding: 0;">
+  <div class="button-bar">
+    <a class="button button-outline button-stable" ng-class="{active:1==clickedIndex}" ng-click="select('all');toggle(1)" style="color:#444">
+      综述
+    </a>
+    <a class="button button-outline button-stable" ng-class="{active:2==clickedIndex}" ng-click="select('pic');toggle(2)" style="color:#444">
+      图片
+    </a>
+    <a class="button button-outline button-stable" ng-class="{active:3==clickedIndex}" ng-click="select('article');toggle(3)" style="color:#444">
+      文章
+    </a>
+    <a class="button button-outline button-stable" ng-class="{active:4==clickedIndex}" ng-click="select('dealers');toggle(4)" style="color:#444">
+      经销商
+    </a>
+  </div>
+</div>
+<div ng-include="'tpl/detail/all.html'" ng-if="detailAll"></div>
+<div ng-include="'tpl/detail/pic.html'" ng-if="detailPic"></div>
+<div ng-include="'tpl/detail/article.html'" ng-if="detailArticle"></div>
+<div ng-include="'tpl/detail/dealers.html'" ng-if="detailDealers"></div>
+

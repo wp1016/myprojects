@@ -11,7 +11,6 @@ var loadFile = function () {
     var fileReader = new FileReader();
     fileReader.onload = function (e) {
         fileContent = e.target.result;
-        console.log(fileContent)
         decodecFile();
     }
     fileReader.readAsArrayBuffer(file);
@@ -30,6 +29,7 @@ var start = function (buffer) {
 
     audioBufferSourceNode = audioContext.createBufferSource();
     audioBufferSourceNode.connect(analyser);
+    console.log(analyser)
     analyser.connect(audioContext.destination);
     audioBufferSourceNode.buffer = buffer;
     audioBufferSourceNode.start(0);

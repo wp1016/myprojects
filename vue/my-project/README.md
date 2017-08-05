@@ -1,6 +1,6 @@
 # my-project
 
-> 我的第一个VUE项目
+> my first vur project
 
 ## Build Setup
 

@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<meta charset="UTF-8">
+	<title>实例</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 </head>
 <body>
+	<div id="app">
+		{{message}}
+		<div>
+			<span :title="message1">
+				鼠标悬停几秒钟查看此处动态绑定的提示信息！
+			</span>
+		</div>
+	</div>
+	
+	<div id="demo">
+		{{fullName}}
+	</div>
+	<div id='inp1'>
+		<input type="checkbox" v-model="toggle" :true-value="a" :false-value="b"/>abc
+		<p>check:{{toggle}}</p>
+	</div>
+	<div id="s1">
+		<select v-model='selected'>
+			<option :value="123">123</option>
+		</select>
+		<p>selected:{{selected}}</p>
+	</div>
+	<div id="s2" :class="isActive?active:''">
+		<button @click="revers()"> click me</button>
+	</div>
 
+	<div id="template1">{{message}}</div>
+	<script src="js/vue.js"></script>
+	<script src="js/vue-router.js"></script>
+	<script type=text/javascript>
+		var data={message:'Hello Vue!',message1:''};
+		var app=new Vue({
+		el:'#app',
+			data:data
+		});
+		app.message1="页面加载于"+new Date();
+		var vm=new Vue({
+			el:'#demo',
+			data:{
+				firstName:'Foo',
+				lastName:'Bar'
+			},
+			computed:{
+				fullName:{
+					get:function(){
+					return this.firstName+' '+this.lastName;
+					},
+					set:function(newValue){
+						var names=newValue.split(' ');
+						this.firstName=names[0];
+						this.lastName=names[names.length-1];
+					}
+				}
+			}
+		});
+		var vm1=new Vue({
+			el:'#inp1',
+			data:{
+				a:true,
+				b:false,
+				toggle:null
+			}
+		});
+		var vm2=new Vue({
+			el:'#s1',
+			data:{
+				selected:{}
+			}
+		});
+		var vm3=new Vue({
+			el:'#s2',
+			data:{
+				isActive:true,
+				active:'active'
+			},
+			methods:{
+				revers:function(){
+					return this.isActive=!this.isActive;
+				}
+			}
+		});
+		var vm4=new Vue({
+			el:'#template1',
+			data:{
+				message:''
+			}
+		});
+		vm4.message='abc';
+		console.log(vm4.$el.textContent==='abc');
+		Vue.nextTick(function(){
+			console.log(vm4.$el.textContent==='abc');
+		})
+
+	</script>
 </body>
 </html>

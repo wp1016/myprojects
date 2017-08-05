@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+<div class="carousel" @mouseenter="hoverEnter()" @mouseleave="hoverLeave()">
+    <ul>
+        <transition name='slide-fade' mode="out-in" v-for='(item,index) in src' :key='item'  enter-active-class="animated bounceInRight"
+                    leave-active-class="animated bounceOutLeft">
+            <li :title="index+1" v-show="showState[index]" :style={background:item}>
+                <a href="#"></a>
+            </li>
+        </transition>
+    </ul>
+    <ol v-if="showState.length>1">
+        <li :class="{active:showState[idx]}" v-for='(item,idx) in showState' @click="showCur(idx)">{{idx+1}}</li>
+    </ol>
+    <div v-if="showState.length>1" class="prev" @click="showPrev()"></div>
+    <div v-if="showState.length>1" class="next" @click="showNext()"></div>
+</div>
+<script type="text/javascript" src='js/vue.js'></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+</body>
+
+</html>

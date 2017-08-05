@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.pic{
+			width: 150px;
+			height: 150px;
+			position: relative;
+		}
+		.bg{
+			width: 110px;
+			height: 110px;
+			background: #E4E5E7;
+			position: absolute;
+			left: 20px;
+			overflow: hidden;
+			z-index:5;
+		}
+		.pic_top{
+			width: 110px;
+			height: 110px;
+			position: absolute;
+			top: 0;
+			left: 20px;
+			z-index: 10;
+			overflow: hidden;
+			background: url(images/upload/leader.jpg) -20px -20px no-repeat;
+		}
+		.pic_bottom{
+			width: 150px;
+			height: 75px;
+			position: absolute;
+			top:110px;
+			z-index: 10;
+			overflow: hidden;
+			background: url(images/upload/leader.jpg) 0px -90px no-repeat;
+		}
+		p{width: 150px;height: 40px; margin-top: 25px;text-align: center;}
+	</style>
+</head>
+<body>
+	<div class="d1">
+		<div class="pic">
+			<div class="bg"></div>
+			<div class="pic_top"></div>
+			<div class="pic_bottom"></div>
+		</div>
+		<p>刘芷</p>
+	</div>
+</body>
+</html>

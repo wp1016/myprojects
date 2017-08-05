@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "我的第一个VUE项目",
+  "description": "my first vur project",
   "author": "wp",
   "private": true,
   "scripts": {

@@ -88,7 +88,7 @@ npm run build
 #### (demo使用的是模拟数据，数据是固定的，只做为样式的演示，要获取真实的数据，请clone代码并运行);
 
 [查看demo请戳这里](http://test.fe.ptdev.cn/elm/)（请用chrome手机模式预览）
-   
+
 ### 移动端扫描下方二维码
 
 ![](https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/elm_ewm.png)
@@ -122,7 +122,7 @@ npm run build
 - [x] 服务中心 -- 完成
 - [x] 红包 -- 完成
 - [x] 上传头像 -- 完成
-- [ ] 付款 -- 臣妾做不到啊~~ 
+- [ ] 付款 -- 臣妾做不到啊~~
 
 
 
@@ -238,17 +238,17 @@ npm run build
 |       |-- mUtils.js                // 常用的js方法
 |       |-- rem.js                   // px转换rem
 |   |-- images                       // 公共图片
-|   |-- pages 
+|   |-- pages
 |       |-- balance                  // 余额页
 |		  	|--children
 |				|--detail			 //	余额说明
 |       |-- benefit                  // 红包页
 |		  |--children
 |			|--commend			     //	推荐有奖
-|			|--coupon			     //	代金券说明 
-|			|--exchange			     //	兑换红包 
-|			|--hbDescription		 //	红包说明 
-|			|--hbHistory			 //	历史红包                       
+|			|--coupon			     //	代金券说明
+|			|--exchange			     //	兑换红包
+|			|--hbDescription		 //	红包说明
+|			|--hbHistory			 //	历史红包
 |       |-- city                     // 当前城市页
 |		|-- food                 	 // 食品筛选排序页
 |		|-- confirmOrder             // 确认订单页
@@ -292,14 +292,14 @@ npm run build
 |			|--children
 |				|--questionDetail    // 问题详情
 |       |-- shop                     // 商铺筛选页
-|			|-- children             
-|			  	|-- foodDetail       // 商铺信息页     
+|			|-- children
+|			  	|-- foodDetail       // 商铺信息页
 |			  	|-- shopDetail       // 单个商铺信息页
-|					|-- children             
-|				  		|-- shopSafe // 商铺认证信息页     
+|					|-- children
+|				  		|-- shopSafe // 商铺认证信息页
 |       |-- vipcard                  // 会员卡办理页
-|			|-- children             
-|			  	|-- invoiceRecord    // 购买记录     
+|			|-- children
+|			  	|-- invoiceRecord    // 购买记录
 |			  	|-- useCart          // 使用卡号购买
 |			  	|-- vipDescription   // 会员说明
 |
@@ -315,7 +315,7 @@ npm run build
 |       |-- modules                  // store模块
 |       |-- action.js                // 配置actions
 |       |-- getters.js               // 配置getters
-|       |-- index.js                 // 引用vuex，创建store
+|       |-- router.js                 // 引用vuex，创建store
 |       |-- mutation-types.js        // 定义常量muations名
 |       |-- mutations.js             // 配置mutations
 |

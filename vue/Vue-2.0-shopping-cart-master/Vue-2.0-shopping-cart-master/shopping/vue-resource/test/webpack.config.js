@@ -1,5 +1,5 @@
 module.exports = {
-    entry: __dirname + '/index.js',
+    entry: __dirname + '/router.js',
     output: {
         path: __dirname + '/',
         filename: 'specs.js'

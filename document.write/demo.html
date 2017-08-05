@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+    function getInfo(){ 
+     var s = "";   
+      s += " 网页正文可见区域宽："+ document.body.clientWidth+"<br/>";    
+      s += " 网页正文可见区域高："+ document.body.clientHeight+"<br/>";    
+      s += " 网页可见区域宽："+ document.body.offsetWidth + " (包括边线和滚动条的宽)"+"<br/>";    
+      s += " 网页可见区域高："+ document.body.offsetHeight + " (包括边线的宽)"+"<br/>";    
+      s += " 网页正文全文宽："+ document.body.scrollWidth+"<br/>";    
+      s += " 网页正文全文高："+ document.body.scrollHeight+"<br/>";    
+      s += " 网页已滚动的高(ff)："+ document.body.scrollTop+"<br/>";    
+      s += " 网页已滚动的高(ie)："+ document.documentElement.scrollTop+"<br/>";    
+      s += " 网页已滚动的左："+ document.body.scrollLeft+"<br/>";    
+      s += " 网页正文部分上："+ window.screenTop+"<br/>";    
+      s += " 网页正文部分左："+ window.screenLeft+"<br/>";    
+      s += " 屏幕分辨率的高："+ window.screen.height+"<br/>";    
+      s += " 屏幕分辨率的宽："+ window.screen.width+"<br/>";    
+      s += " 屏幕可用工作区高度："+ window.innerHeight+"<br/>";    
+      s += " 屏幕可用工作区宽度："+ window.innerWidth+"<br/>";    
+      s += " 屏幕工作区最大宽度："+ window.screen.availWidth+"<br/>";    
+      s += " 屏幕工作区最大高度："+ window.screen.availHeight+"<br/>";     
+      s += " 你的屏幕设置是 "+ window.screen.colorDepth +" 位彩色"+"<br/>";    
+      document.getElementById('d1').innerHTML=s;
+    }
+    getInfo();
+    window.onresize=getInfo;
+    </script>
+</body>
+
+</html>

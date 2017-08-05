@@ -6,6 +6,7 @@ let vm = new Vue( {
         checkAllFlag: false,
         curProduct:'',
         delFlag:''
+
     },
     filters:{ // 过滤器
        formatMoney:function ( value ) { // 局部过滤器

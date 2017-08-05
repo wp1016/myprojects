@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body,ul,li,img,div{margin: 0;padding: 0;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+.clearfix:after{content: '';display: block;clear: both;height: 0;visibility: hidden;}
+/*可定义样式*/
+
+.hoverDir .hoverWrap{width: 1000px;margin: 100px auto;}
+.hoverDir ul li{float: left; margin: 10px;position: relative;overflow: hidden; }
+.hoverDir ul li img{vertical-align: middle; width: 180px;height: 150px;border:1px solid #aaa;}
+.hoverDir li a{display: block;position: relative;overflow: hidden;}

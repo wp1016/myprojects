@@ -14,8 +14,7 @@
         var context = new audioContext();
         var audioBufferSourceNode;
         var analyser;
-        analyser = context.createAnalyser();
-        analyser.fftSize = 8192;
+
         //将声音输入这个对像
         var audioInput = context.createMediaStreamSource(stream);
 
@@ -172,47 +171,6 @@
         //音频采集
         recorder.onaudioprocess = function (e) {
             audioData.input(e.inputBuffer.getChannelData(0));
-            console.log(e)
-            var render = function () {
-                ctx = canvas.getContext("2d");
-                ctx.strokeStyle = "#00d0ff";
-                ctx.lineWidth = 2;
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                var dataArray = new Uint8Array(analyser.frequencyBinCount);
-                analyser.getByteFrequencyData(dataArray);
-                var step = Math.round(dataArray.length / 60);
-                for (var i = 0; i < 40; i++) {
-                    var energy = (dataArray[step * i] / 256.0) * 50;
-                    for (var j = 0; j < energy; j++) {
-                        /*  ctx.beginPath();
-                         ctx.moveTo(20 * i + 2, 200 + 4 * j);
-                         ctx.lineTo(20 * (i + 1) - 2, 200 + 4 * j);
-                         ctx.stroke();*/
-                        ctx.beginPath();
-                        ctx.moveTo(20 * i + 2, 200 - 4 * j);
-                        ctx.lineTo(20 * (i + 1) - 2, 200 - 4 * j);
-                        ctx.stroke();
-                    }
-                    ctx.beginPath();
-                    ctx.moveTo(20 * i + 2, 200);
-                    ctx.lineTo(20 * (i + 1) - 2, 200);
-                    ctx.stroke();
-                }
-                window.requestAnimationFrame(render);
-            }
-            var startBuffer = function (buffer) {
-                if (audioBufferSourceNode) {
-                    audioBufferSourceNode.stop();
-                }
-
-                audioBufferSourceNode = context.createBufferSource();
-                audioBufferSourceNode.connect(analyser);
-                analyser.connect(context.destination);
-                audioBufferSourceNode.buffer = buffer;
-                audioBufferSourceNode.start(0);
-                window.requestAnimationFrame(render)//先判断是否已经调用一次
-            }
-            startBuffer(e.inputBuffer)
             // record(e.inputBuffer.getChannelData(0));
         };
 

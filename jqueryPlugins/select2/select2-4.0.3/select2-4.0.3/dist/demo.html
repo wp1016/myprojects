@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/mego-public.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <style>
+        .w600{ width:600px; margin:0 auto;}
+    </style>
+</head>
+<body>
+<div class="d1 w600 pdt40">
+    <select  id="s1" class="w600 abcd" >
+        <optgroup label="栏目1">
+            <option data-value="a" value="1">栏目1-1</option>
+            <option data-value="b" value="2">栏目1-2</option>
+            <option data-value="c" value="3">栏目1-3</option>
+        </optgroup>
+    </select>
+    <div class="select2"></div>
+</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/select2.full.js"></script>
+<script>
+    $(function () {
+        function format(state) {
+            var originalOption = state.element;
+
+            return "<img class='flag' src='images/flags/" + state.id.toLowerCase() + ".png' alt='" + $(originalOption).data('value') + "' />" + state.text;
+        }
+       var data=[
+            {
+                text:'栏目1',
+                children:[{
+                    id:'4',
+                    text:'栏目1-4',
+                    dataValue:'d',
+                }]
+            },
+        ]
+        $('#s1').select2({
+            data:data,
+            minimumResultsForSearch: Infinity,//隐藏搜索框
+            /*width:200,*/
+            tag:true,//是否支持生成标记（只在多选时生效）
+            formatResult:format,
+            formatSelection:format,
+            dropdownParent:$('.select2'),//下拉框放置的容器
+            containerCss:{textAlign:'center'},
+            adaptContainerCssClass:function (clazz) {//克隆源 CLASS名到新显示框
+                return clazz
+            },
+            adaptDropdownCssClass:function (clazz) {//克隆源 CLASS到下拉条
+                return clazz
+            }
+        }).on('select2:select',function () {
+            var option=$($(this).select2('data')[0].element);//获取单选选中项 （为DOM对象 需转换为jquery对象）
+            console.log(option.data('value'))
+        });
+    })
+    var json=[];
+    for (var i=0;i<20;i++){
+        json.push({id:i,value:i,text:'栏目'+i});
+    }
+    json=JSON.stringify(json);
+    console.log(json);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>图片Hover插件</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="hoverDir" class="hoverDir">
+        <div class="hoverWrap">
+            <ul class="clearfix">
+                <li><a href="#"><img src="images/product-s1-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s2-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s3-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s4-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s1-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s2-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s3-m.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/product-s4-m.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-hoverDir.js"></script>
+    <script>
+        $(function(){
+            $('#hoverDir').hoverDir("#faa",0.4);
+        });
+    </script>
+</body>
+
+</html>

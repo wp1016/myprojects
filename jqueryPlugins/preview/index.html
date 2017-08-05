@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自适应图片放大镜插件</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="magnify">
+        <div class="m_small">
+        	<div class="small_wrap">	
+	    		<ul class="clearfix">
+	                <li><img data-src="images/01.jpg" src="images/01.jpg" alt=""></li>
+	                <li><img data-src="images/02.jpg" src="images/02.jpg" alt=""></li>
+	                <li><img data-src="images/03.jpg" src="images/03.jpg" alt=""></li>
+	                <li><img data-src="images/04.jpg" src="images/04.jpg" alt=""></li>
+	                <li><img data-src="images/05.jpg" src="images/05.jpg" alt=""></li>
+	                <li><img data-src="images/06.jpg" src="images/06.jpg" alt=""></li>
+	                <li><img data-src="images/01.jpg" src="images/01.jpg" alt=""></li>
+	            </ul>
+        	</div>
+        </div>
+    </div>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/fdj.js"></script>
+    <script>
+    $(function(){
+        $('.magnify').preview();
+    });
+    </script>
+</body>
+
+</html>
