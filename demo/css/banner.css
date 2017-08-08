@@ -1,0 +1,63 @@
+/*reset*/
+body{color:#555;font-size:12px;line-height:1.8em;font-family:"microsoft yahei",微软雅黑,Tahoma,Helvetica; min-width:1200px;}
+body,form,ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,table,fieldset,div,tr,td{margin:0; padding:0;}
+img{border:0; vertical-align:middle;}
+em,i{font-style:normal;}
+ol,ul,li{ list-style:none;}
+h1,h2,h3,h4,h5{color:#3d95d5;}
+label{vertical-align:middle}
+a,a:visited{ text-decoration:none}
+a:hover,a:active{ text-decoration:none}
+a:focus {outline:none;-moz-outline:none;}
+
+/* input pub and focus placeholder */
+input,select,textarea{color:#222; font-size:12px;line-height:140%;resize:none;outline:none;font-family:"microsoft yahei";}
+textarea{padding: 5px;border: 1px solid #d5d5d5;}
+.inp {padding: 5px;border: 1px solid #d5d5d5;color:#888; outline:none;vertical-align: middle;}
+input[type="text"].inp:focus, input[type="password"].inp:focus, textarea:focus{ border: 1px solid #3d95d5;}
+::-webkit-input-placeholder { /* WebKit browsers */color:#888;font-family:"microsoft yahei";}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#888;font-family:"microsoft yahei";}
+::-moz-placeholder { /* Mozilla Firefox 19+ */color:#888;font-family:"microsoft yahei";}
+:-ms-input-placeholder { /* Internet Explorer 10+ */color:#888;font-family:"microsoft yahei";}
+/* clearfix  */
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {*zoom:1;}
+.clearfix {display:block;}
+.u_ico{ background:url(../images/index4/index_ico.png) no-repeat;}
+i.u_ico{display:inline-block; vertical-align:middle; margin:0px; padding:0px;}
+.dis_none{ display:none;}
+.pos_rel{ position:relative;}
+.pos_abs{ position:absolute;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+
+/*banner begin*/
+.m_banner{ height:499px; width:100%; min-width:1200px; position:relative; overflow:hidden; zoom:1; z-index:5;}
+.m_banner .m_wrap{ height:499px; position:relative; z-index:5;}
+.m_banner ul{ width:100%; height:499px; background:url(../images/banner/loading.gif) no-repeat center center;}
+.m_banner li{ position:absolute; top:0px; left:0px; width:100%; height:499px; display:none; z-index:1;}
+.m_banner li a{ display:block; width:100%; height:480px;}
+.m_banner .banner-li1{ background:url(../images/banner/banner1.jpg) no-repeat center center;}
+.m_banner .banner-li2{ background:url(../images/banner/banner2.jpg) no-repeat center center;}
+.m_banner .banner-li3{ background:url(../images/banner/banner3.jpg) no-repeat center center;}
+.m_banner .banner-li4{ background:url(../images/banner/banner4.jpg) no-repeat center center;}
+.m_banner .banner-li5{ background:#e9f8ff;}
+.m_banner .banner-li6{background:url(../images/banner/banner6.jpg) no-repeat center center;}
+.m_banner .banner-li7{background:url(../images/banner/banner7.png) no-repeat center center;}
+
+.m_banner li .m_wrap div:first-child{ position:absolute; width:100%; bottom:0;  text-align:center;}
+.m_banner li .m_wrap div:last-child{ position:absolute; width:100%; top:0;  text-align:center;}
+.m_banner .page{ position:absolute; bottom:13px; left:0; text-align:center; height:25px; width:100%; z-index:20; background:none;}
+.m_banner .page li{ display:inline-block; width:12px; height:12px; background:#fff; border-radius:6px; position:static; margin:0 4px; cursor:pointer;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;transition:all 1s ease; opacity:0.5;}
+.m_banner .page li.active{ opacity:1;}
+.m_banner .banner_btn{ display:none;}
+.m_banner .pre-btn{  position:absolute; top:209px; left:30px; width:48px; height:48px; z-index:21; }
+.m_banner .pre-btn i{background:url(../images/banner/banner_btnl.png) no-repeat center center; display:block; width:100%; height:100%;}
+.m_banner .pre-btn:hover i{background:url(../images/banner/banner_btnl1.png) no-repeat center center;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease; -webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease;}
+.m_banner .next-btn{ position:absolute; top:209px; right:30px; width:48px; height:48px; z-index:21;}
+.m_banner .next-btn i{background:url(../images/banner/banner_btnr.png) no-repeat center center; display:block; width:100%; height:100%;}
+.m_banner .next-btn:hover i{background:url(../images/banner/banner_btnr1.png) no-repeat center center;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease; -webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease;}
+
+
+/*banner end*/

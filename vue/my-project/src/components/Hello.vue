@@ -50,5 +50,4 @@ li {
 a {
   color: #42b983;
 }
-  .hello{ text-align:center;}
 </style>

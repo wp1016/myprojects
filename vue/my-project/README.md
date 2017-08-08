@@ -1,6 +1,6 @@
 # my-project
 
-> my first vur project
+> my vue-demo
 
 ## Build Setup
 

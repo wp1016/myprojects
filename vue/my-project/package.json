@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "my first vur project",
+  "description": "my vue-demo",
   "author": "wp",
   "private": true,
   "scripts": {
