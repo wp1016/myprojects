@@ -62,7 +62,7 @@ var preview={
 		this.$mImg=$("#mImg");
 		this.$large=$("#largeDiv");
 		this.$large.css("backgroundImage","url(images/products/product-s1-l.jpg)")
-		this.$ul.on("mouseover","li img",e=>{
+		this.$ul.on("mouseover","li images",e=>{
 			var $src=$(e.target).attr("src");
 			var i=$src.lastIndexOf(".");
 			this.$mImg.attr("src",$src.slice(0,i).concat("-m").concat($src.slice(i)))

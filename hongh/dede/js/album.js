@@ -97,7 +97,7 @@ function seePicNewAlb(f, imgdid, frname, hpos, acname){
 		newobj.style.top = hpos;
 		newobj.style.left = 100;
 		document.body.appendChild(newobj);
-		newobj.innerHTML = '<img src="images/loadinglit.gif" width="16" height="16" alit="" />上传中...';
+		newobj.innerHTML = '<images src="images/loadinglit.gif" width="16" height="16" alit="" />上传中...';
 	}
 	newobj.style.display = 'block';
 	//提交后还原form的action等参数

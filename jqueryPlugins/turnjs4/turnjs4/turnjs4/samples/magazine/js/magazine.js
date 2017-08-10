@@ -22,7 +22,7 @@ function addPage(page, book) {
 }
 
 function loadPage(page, pageElement) {
-        var img = $('<img />');
+        var img = $('<images />');
 
         img.mousedown(function(e) {
             e.preventDefault();
@@ -162,11 +162,11 @@ function processRegion(region, regionType) {
 
 function loadLargePage(page, pageElement) {
 	
-	var img = $('<img />');
+	var images = $('<images />');
 
-	img.load(function() {
+	images.load(function() {
 
-		var prevImg = pageElement.find('img');
+		var prevImg = pageElement.find('images');
 		$(this).css({width: '100%', height: '100%'});
 		$(this).appendTo(pageElement);
 		prevImg.remove();
@@ -175,21 +175,21 @@ function loadLargePage(page, pageElement) {
 
 	// Loadnew page
 	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
+	images.attr('src', 'pages/' +  page + '-large.jpg');
 }
 
 // Load small page
 
 function loadSmallPage(page, pageElement) {
 	
-	var img = pageElement.find('img');
+	var images = pageElement.find('images');
 
-	img.css({width: '100%', height: '100%'});
+	images.css({width: '100%', height: '100%'});
 
-	img.unbind('load');
+	images.unbind('load');
 	// Loadnew page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	images.attr('src', 'pages/' +  page + '.jpg');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488

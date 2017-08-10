@@ -412,7 +412,7 @@ function lsShowNotice(e, t, n) {
                         t.data("videoDuration", parseInt(e["entry"]["media$group"]["yt$duration"]["seconds"]) * 1e3)
                     });
                     var n = e("<div>").addClass("ls-vpcontainer").appendTo(e(this).parent());
-                    e("<img>").appendTo(n).addClass("ls-videopreview").attr("src", "http://img.youtube.com/vi/" + e(this).attr("src").split("embed/undefined.undefined")[1].split("?")[0] + "/" + a.o.youtubePreview);
+                    e("<images>").appendTo(n).addClass("ls-videopreview").attr("src", "http://images.youtube.com/vi/" + e(this).attr("src").split("embed/undefined.undefined")[1].split("?")[0] + "/" + a.o.youtubePreview);
                     e("<div>").appendTo(n).addClass("ls-playvideo");
                     e(this).parent().css({
                         width: e(this).width(),
@@ -461,7 +461,7 @@ function lsShowNotice(e, t, n) {
                     var n = e("<div>").addClass("ls-vpcontainer").appendTo(e(this).parent());
                     e.getJSON("http://vimeo.com/api/v2/video/" + e(this).attr("src").split("video/undefined.undefined")[1].split("?")[0] + ".json?callback=?",
                     function (r) {
-                        e("<img>").appendTo(n).addClass("ls-videopreview").attr("src", r[0]["thumbnail_large"]);
+                        e("<images>").appendTo(n).addClass("ls-videopreview").attr("src", r[0]["thumbnail_large"]);
                         t.data("videoDuration", parseInt(r[0]["duration"]) * 1e3);
                         e("<div>").appendTo(n).addClass("ls-playvideo")
                     });
@@ -591,7 +591,7 @@ function lsShowNotice(e, t, n) {
                 if (a.o.navButtons && a.o.thumbnailNavigation != "always") {
                     e('<span class="ls-bottom-slidebuttons" />').appendTo(e(o).find(".ls-bottom-nav-wrapper"));
                     if (a.o.thumbnailNavigation == "hover") {
-                        var i = e('<div class="ls-thumbnail-hover"><div class="ls-thumbnail-hover-inner"><div class="ls-thumbnail-hover-bg"></div><div class="ls-thumbnail-hover-img"><img></div><span></span></div></div>').appendTo(e(o).find(".ls-bottom-slidebuttons"))
+                        var i = e('<div class="ls-thumbnail-hover"><div class="ls-thumbnail-hover-inner"><div class="ls-thumbnail-hover-bg"></div><div class="ls-thumbnail-hover-images"><images></div><span></span></div></div>').appendTo(e(o).find(".ls-bottom-slidebuttons"))
                     }
                     for (x = 1; x < a.g.layersNum + 1; x++) {
                         var u = e('<a href="#" />').appendTo(e(o).find(".ls-bottom-slidebuttons")).click(function (t) {
@@ -599,7 +599,7 @@ function lsShowNotice(e, t, n) {
                             e(o).layerSlider(e(this).index() + 1)
                         });
                         if (a.o.thumbnailNavigation == "hover") {
-                            e(o).find(".ls-thumbnail-hover, .ls-thumbnail-hover-img").css({
+                            e(o).find(".ls-thumbnail-hover, .ls-thumbnail-hover-images").css({
                                 width: a.o.tnWidth,
                                 height: a.o.tnHeight
                             });
@@ -622,7 +622,7 @@ function lsShowNotice(e, t, n) {
                                 } else {
                                     var n = a.o.skinsPath + a.o.skin + "/nothumb.png"
                                 }
-                                e(o).find(".ls-thumbnail-hover-img").css({
+                                e(o).find(".ls-thumbnail-hover-images").css({
                                     left: parseInt(f.css("padding-left")),
                                     top: parseInt(f.css("padding-top"))
                                 });
@@ -733,9 +733,9 @@ function lsShowNotice(e, t, n) {
                         var n = e(this).find(".ls-bg").attr("src")
                     }
                     if (n) {
-                        var r = e('<a href="#" class="ls-thumb-' + t + '"><img src="' + n + '"></a>')
+                        var r = e('<a href="#" class="ls-thumb-' + t + '"><images src="' + n + '"></a>')
                     } else {
-                        var r = e('<a href="#" class="ls-nothumb ls-thumb-' + t + '"><img src="' + a.o.skinsPath + a.o.skin + '/nothumb.png"></a>')
+                        var r = e('<a href="#" class="ls-nothumb ls-thumb-' + t + '"><images src="' + a.o.skinsPath + a.o.skin + '/nothumb.png"></a>')
                     }
                     r.appendTo(e(o).find(".ls-thumbnail-slide"));
                     if (!("ontouchstart" in window)) {
@@ -820,7 +820,7 @@ function lsShowNotice(e, t, n) {
             shadowTimer = 150;
             setTimeout(function () {
                 if (e(o).find(".ls-shadow").css("display") == "block") {
-                    a.g.shadow = e(o).find(".ls-shadow").append(e("<img />").attr("src", a.o.skinsPath + a.o.skin + "/shadow.png"))
+                    a.g.shadow = e(o).find(".ls-shadow").append(e("<images />").attr("src", a.o.skinsPath + a.o.skin + "/shadow.png"))
                 }
                 a.resizeShadow()
             },
@@ -887,7 +887,7 @@ function lsShowNotice(e, t, n) {
             }
             a.resizeSlider();
             if (a.o.yourLogo) {
-                a.g.yourLogo = e("<img>").addClass("ls-yourlogo").appendTo(e(o)).attr("style", a.o.yourLogoStyle).css({
+                a.g.yourLogo = e("<images>").addClass("ls-yourlogo").appendTo(e(o)).attr("style", a.o.yourLogoStyle).css({
                     visibility: "hidden",
                     display: "bock"
                 }).load(function () {
@@ -1172,7 +1172,7 @@ function lsShowNotice(e, t, n) {
                         a.g.li.fadeIn(300)
                     }
                     for (x = 0; x < r.length; x++) {
-                        e("<img>").load(function () {
+                        e("<images>").load(function () {
                             if (++i == r.length) {
                                 a.g.li.dequeue().css({
                                     display: "none"
@@ -2117,7 +2117,7 @@ function lsShowNotice(e, t, n) {
                     }
                     var W = a.g.curLayer.find(".ls-bg");
                     if (W.length) {
-                        N.append(e("<img>").attr("src", W.attr("src")).css({
+                        N.append(e("<images>").attr("src", W.attr("src")).css({
                             width: W[0].style.width,
                             height: W[0].style.height,
                             marginLeft: i.width() / 2 + parseFloat(W.css("margin-left")) - parseInt(T.position().left),
@@ -2126,7 +2126,7 @@ function lsShowNotice(e, t, n) {
                     }
                     var X = a.g.nextLayer.find(".ls-bg");
                     if (X.length) {
-                        C.append(e("<img>").attr("src", X.attr("src")).css({
+                        C.append(e("<images>").attr("src", X.attr("src")).css({
                             width: X[0].style.width,
                             height: X[0].style.height,
                             marginLeft: i.width() / 2 + parseFloat(X.css("margin-left")) - parseInt(T.position().left),

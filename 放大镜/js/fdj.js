@@ -80,7 +80,7 @@ window.onload=function(){
             loadMidImg(m_middle.children('img').attr('src'));
             li.mouseenter(function() {
                 $(this).addClass('on').siblings('.on').removeClass('on');
-                var lSrc=$(this).children('img').data('src');
+                var lSrc=$(this).children('images').data('src');
                 loadMidImg(lSrc);
                 loadBigImg(lSrc);
 

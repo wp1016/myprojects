@@ -72,7 +72,7 @@ function tb_show(caption, url, refParent)
     }
         
     if(caption===null) caption="消息窗口";
-        $("body").append("<div id='TB_load'><img src='"+imgLoader.src+"' /></div>");
+        $("body").append("<div id='TB_load'><images src='"+imgLoader.src+"' /></div>");
         $('#TB_load').show();
         
         var baseURL;

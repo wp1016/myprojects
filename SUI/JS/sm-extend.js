@@ -2812,8 +2812,8 @@ Swiper
                         '</div>';
 
         var photoTemplate = !pb.params.lazyLoading ?
-            (pb.params.photoTemplate || '<div class="photo-browser-slide swiper-slide"><span class="photo-browser-zoom-container"><img src="{{url}}"></span></div>') :
-            (pb.params.photoLazyTemplate || '<div class="photo-browser-slide photo-browser-slide-lazy swiper-slide"><div class="preloader' + (pb.params.theme === 'dark' ? ' preloader-white' : '') + '"></div><span class="photo-browser-zoom-container"><img data-src="{{url}}" class="swiper-lazy"></span></div>');
+            (pb.params.photoTemplate || '<div class="photo-browser-slide swiper-slide"><span class="photo-browser-zoom-container"><images src="{{url}}"></span></div>') :
+            (pb.params.photoLazyTemplate || '<div class="photo-browser-slide photo-browser-slide-lazy swiper-slide"><div class="preloader' + (pb.params.theme === 'dark' ? ' preloader-white' : '') + '"></div><span class="photo-browser-zoom-container"><images data-src="{{url}}" class="swiper-lazy"></span></div>');
 
         var captionsTheme = pb.params.captionsTheme || pb.params.theme;
         var captionsTemplate = pb.params.captionsTemplate || '<div class="photo-browser-captions photo-browser-captions-' + captionsTheme + '">{{captions}}</div>';
@@ -3097,7 +3097,7 @@ Swiper
         pb.onSlideGestureStart = function () {
             if (!gestureSlide) {
                 gestureSlide = $(this);
-                gestureImg = gestureSlide.find('img, svg, canvas');
+                gestureImg = gestureSlide.find('images, svg, canvas');
                 gestureImgWrap = gestureImg.parent('.photo-browser-zoom-container');
                 if (gestureImgWrap.length === 0) {
                     gestureImg = undefined;
@@ -3129,7 +3129,7 @@ Swiper
         pb.toggleZoom = function () {
             if (!gestureSlide) {
                 gestureSlide = pb.swiper.slides.eq(pb.swiper.activeIndex);
-                gestureImg = gestureSlide.find('img, svg, canvas');
+                gestureImg = gestureSlide.find('images, svg, canvas');
                 gestureImgWrap = gestureImg.parent('.photo-browser-zoom-container');
             }
             if (!gestureImg || gestureImg.length === 0) return;
@@ -3350,8 +3350,8 @@ Swiper
             lazyLoadingOnTransitionStart: false,
             /*
             Callbacks:
-            onLazyImageLoad(pb, slide, img)
-            onLazyImageReady(pb, slide, img)
+            onLazyImageLoad(pb, slide, images)
+            onLazyImageReady(pb, slide, images)
             onOpen(pb)
             onClose(pb)
             onSlideChangeStart(swiper)

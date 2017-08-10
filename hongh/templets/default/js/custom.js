@@ -14,7 +14,7 @@ $(document).ready(function ($) {
         //}).appendTo($menu_select);
 
     
-    var Lihtml = "<div id=\"smenu_\" class='smenu_'   onclick=\"set_smenu()\"><img src='/images/function.png' id='smenu_img' >导航</div> <div class='smenu' id='smenu' style=\"display:none;\">";
+    var Lihtml = "<div id=\"smenu_\" class='smenu_'   onclick=\"set_smenu()\"><images src='/images/function.png' id='smenu_img' >导航</div> <div class='smenu' id='smenu' style=\"display:none;\">";
         $("#main-navigation ul li a.primary").each(function () {
             var menu_url = $(this).attr("href");
             var menu_text = $(this).text();
@@ -27,7 +27,7 @@ $(document).ready(function ($) {
             //if ($(this).parents("li").length > 3) {
             //    menu_text = "--- " + menu_text;
             //}
-            Lihtml += "<dd><a href='" + menu_url + "'><img src='/images/jiantou.png' id='img'>" + menu_text + "</dd>";
+            Lihtml += "<dd><a href='" + menu_url + "'><images src='/images/jiantou.png' id='images'>" + menu_text + "</dd>";
         });
         Lihtml += "</div>";
 

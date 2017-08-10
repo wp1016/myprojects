@@ -137,7 +137,7 @@ function MagicZoom(smallImageContId, smallImageId, bigImageContId, bigImageId, s
         this.loadingCont.className = 'MagicZoomLoading';
         this.loadingCont.style.display = 'block';
         this.loadingCont.style.textAlign = 'center';
-        this.loadingCont.innerHTML = this.settings["loadingText"] + '<br/><img border="0" alt="' + this.settings["loadingText"] + '" src="' + this.settings["loadingImg"] + '"/>';
+        this.loadingCont.innerHTML = this.settings["loadingText"] + '<br/><images border="0" alt="' + this.settings["loadingText"] + '" src="' + this.settings["loadingImg"] + '"/>';
         this.smallImageCont.appendChild(this.loadingCont)
     }
     this.baseuri = '';

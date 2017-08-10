@@ -83,7 +83,7 @@ function zoomThis(pic) {
 	var	position, translate,
 		tmpContainer = $('<div />', {'class': 'zoom-pic'}),
 		transitionEnd = $.cssTransitionEnd(),
-		tmpPic = $('<img />'),
+		tmpPic = $('<images />'),
 		zCenterX = $('#book-zoom').width()/2,
 		zCenterY = $('#book-zoom').height()/2,
 		bookPos = $('#book-zoom').offset(),

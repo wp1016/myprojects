@@ -2,7 +2,7 @@
 
 function loadPage(page) {
 
-	var img = $('<img />');
+	var img = $('<images />');
 	img.load(function() {
 		var container = $('.sample-docs .p'+page);
 		img.css({width: container.width(), height: container.height()});

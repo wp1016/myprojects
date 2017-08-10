@@ -79,7 +79,7 @@ export default {
 		if(this.$store.state.itemDetail.length == 0){
 			this.$store.dispatch('getData');
 		}
-		document.body.style.backgroundImage = 'url(./static/img/1-1.jpg)';
+		document.body.style.backgroundImage = 'url(./static/images/1-1.jpg)';
 	}
 }
 </script>
@@ -114,7 +114,7 @@ export default {
 		position: absolute;
 		top: 4.1rem;
 		left: 1rem;
-	}	
+	}
 	.home_logo{
 		background-image: url(../images/1-2.png);
 		background-size: 13.142rem 100%;

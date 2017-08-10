@@ -121,7 +121,7 @@ $.fn.preview = function() {
     ul.on('click', 'li', function(e) {
         e.stopPropagation();
         $(this).addClass('on').siblings('.on').removeClass('on');
-        var lSrc = $(this).children('img').data('src');
+        var lSrc = $(this).children('images').data('src');
         loadImg(lSrc);
         var idx=$(this).index();
         index1=idx;
@@ -136,7 +136,7 @@ $.fn.preview = function() {
             lHeight = this.height;
             //加载中图
             var newImg = new Image();
-            var html2 = "<div class='padding_wrap'><div class='middle_container'><div class='mask_wrap'></div><div class='m_mask'></div><img src='" + src + "'/></div></div>";
+            var html2 = "<div class='padding_wrap'><div class='middle_container'><div class='mask_wrap'></div><div class='m_mask'></div><images src='" + src + "'/></div></div>";
             m_middle.html(html2);
             m_middle.find('img').css({
                 maxWidth: mainWidth,

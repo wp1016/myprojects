@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*智慧校园公众号*/
+/*公共样式*/
+body { font-family: 微软雅黑; }
+
+.clearfix:after { content: ''; display: block; clear: both; }
+
+.dis_none { display: none; }
+
+ul, ol, li { list-style: none; padding: 0; margin: 0; }
+
+.bar .button { top: 0; }
+
+.swiper-container { padding-bottom: 0; }
+
+.swiper-container-horizontal > .swiper-pagination { bottom: .3rem; }
+
+/*主页*/
+#main .content { background: #fff; }
+#main .content .grid-demo { margin: .5rem; }
+#main .content .grid-demo .button { position: relative; }
+#main .content .grid-demo .button .wrap { position: absolute; display: none; top: 3.7%; left: 20%; right: 20%; bottom: 10%; background: url(../images/icon_wrap.png) center top no-repeat; background-size: 100%; }
+#main .content .grid-demo .button:active .wrap { display: block; }
+#main .content .grid-demo .button.button-block { height: 100%; font-size: .7rem; text-align: center; color: #353535; border: none; line-height: 1rem; padding: 3% 20% 8%; }
+#main .content .grid-demo .button.button-block img { width: 100%; }
+
+/*登录*/
+#login { background: url(../images/loginBg.png) 0 0 no-repeat; background-size: cover; }
+#login .icon-user { width: 1.5rem; height: 1.5rem; background: url(../images/user.svg) center center no-repeat; background-size: 100%; }
+#login .icon-password { width: 1.5rem; height: 1.5rem; background: url(../images/password.svg) center center no-repeat; background-size: 100%; }
+#login .content { background: url(../images/login_footerBg.png) center bottom no-repeat; background-size: 100%; }
+#login .content .logo { padding-top: 19%; padding-bottom: 5%; background: url(../images/login_logoBg.png) center top no-repeat; background-size: 100%; text-align: center; }
+#login .content .logo img { width: 40%; }
+#login .content .list-block { margin: 0; }
+#login .content .list-block ul { margin: 0 .5rem; border-radius: 10px; }
+#login .content .list-block ul li { padding-left: .75rem; }
+#login .content .list-block ul li:first-child .item-content { position: relative; padding: 0; }
+#login .content .list-block ul li:first-child .item-content:after { content: ''; position: absolute; left: 0; bottom: 0; right: auto; top: auto; height: 1px; width: 100%; background-color: #e7e7e7; display: block; z-index: 15; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; }
+#login .content .list-block ul .item-content { padding: 0; }
+#login .content .content-padded { margin-top: .75rem; }
+#login .content .content-padded .button { border-radius: 10px; background: #4C99E1; }
+#login .content .content-padded .button:active { background: #3282CD; }
+
+/*个人信息*/
+#user_info { background: #fff; }
+#user_info .header-top { padding-top: 10%; text-align: center; min-height: 10rem; }
+#user_info .header-top.teacher { background: url(../images/infoBg1.png) center top no-repeat; background-size: cover; }
+#user_info .header-top.student { background: url(../images/infoBg2.png) center top no-repeat; background-size: cover; }
+#user_info .header-top.patriarch { background: url(../images/infoBg3.png) center top no-repeat; background-size: cover; }
+#user_info .header-top p { margin: 0; }
+#user_info .header-top p.user_name { margin-top: .5rem; font-size: 1rem; color: #353535; }
+#user_info .header-top p.school { font-size: .85rem; color: #555; }
+#user_info .header-top .info_photo { display: inline-block; text-align: center; line-height: 4rem; width: 4rem; height: 4rem; padding: .3rem; border-radius: 50%; overflow: hidden; background: #fff; }
+#user_info .header-top .info_photo img { width: 3.4rem; height: 3.4rem; border-radius: 50%; }
+#user_info .list-block { margin: 0; }
+#user_info .list-block ul:before, #user_info .list-block ul:after { display: none; }
+#user_info .list-block ul li:first-child .item-content:after { content: ''; position: absolute; left: 0; bottom: 0; right: auto; top: auto; height: 1px; width: 100%; background-color: #e7e7e7; display: block; z-index: 15; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; }
+#user_info .list-block ul li:last-child .item-content { align-items: start; -webkit-align-items: flex-start; }
+#user_info .list-block ul li:last-child .item-content .item-inner { padding-top: 0; }
+#user_info .item-content { padding: .5rem .75rem; }
+#user_info .item-content .item-media { color: #A1A1A1; font-size: .85rem; }
+#user_info .item-content .item-inner:after { display: none; }
+#user_info .item-content .item-inner .item-text { color: #353535; height: auto; font-size: .85rem; }
+#user_info .item-content .item-inner .item-text p { margin: 0; line-height: 2rem; }
+#user_info .item-content .item-inner .item-text p span { margin-left: 1rem; }
+#user_info .button-big { background: #4C99E1; }
+#user_info .button-big:active { background: #3282CD; }

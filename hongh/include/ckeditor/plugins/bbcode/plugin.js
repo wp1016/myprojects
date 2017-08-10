@@ -535,7 +535,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 			 * @param {String} tagName The tag name to which set the rules.
 			 * @param {Object} rules An object containing the element rules.
 			 * @example
-			 * // Break line before and after "img" tags.
+			 * // Break line before and after "images" tags.
 			 * writer.setRules( 'list',
 			 *     {
 			 *         breakBeforeOpen : true

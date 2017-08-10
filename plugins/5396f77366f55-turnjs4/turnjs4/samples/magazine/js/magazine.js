@@ -26,7 +26,7 @@ function loadPage(page, pageElement) {
 
 	// Create an image element
 
-	var img = $('<img />');
+	var img = $('<images />');
 
 	img.mousedown(function(e) {
 		e.preventDefault();
@@ -166,7 +166,7 @@ function processRegion(region, regionType) {
 
 function loadLargePage(page, pageElement) {
 	
-	var img = $('<img />');
+	var img = $('<images />');
 
 	img.load(function() {
 

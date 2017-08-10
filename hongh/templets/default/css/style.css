@@ -237,7 +237,7 @@ LI.feilei5 { WIDTH: 220px; BACKGROUND: none transparent scroll repeat 0% 0%; }
     /*.i_main_t ul{ width:110%;}
 .i_main_t ul li{ width:182px; float:left; _display:inline; margin-right:17px;}
 .i_main_t ul li h2{ font-size:18px; font-weight:bold; color:#0e0d0c; padding:15px 0;}
-.i_main_t ul li .lmt_img img{ width:182px; height:106px; }*/
+.i_main_t ul li .lmt_img images{ width:182px; height:106px; }*/
     .i_main_t .i_add_ico { }
         .i_main_t .i_add_ico li { width: 19.8%; height: 115px; padding-top: 5px; float: left; text-align: center; }
             .i_main_t .i_add_ico li a { display: inline-block; width: 100%; height: 100%; }

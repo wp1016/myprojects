@@ -21073,11 +21073,11 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    *
    * @description
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
-   * urls during img[src] sanitization.
+   * urls during images[src] sanitization.
    *
    * The sanitization is a security measure aimed at prevent XSS attacks via html links.
    *
-   * Any url about to be assigned to img[src] via data-binding is first normalized and turned into
+   * Any url about to be assigned to images[src] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `imgSrcSanitizationWhitelist`
    * regular expression. If a match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
@@ -21331,10 +21331,10 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
         if ((nodeName === 'a' && (key === 'href' || key === 'xlinkHref')) ||
             (nodeName === 'img' && key === 'src')) {
-          // sanitize a[href] and img[src] values
+          // sanitize a[href] and images[src] values
           this[key] = value = $$sanitizeUri(value, key === 'src');
         } else if (nodeName === 'img' && key === 'srcset') {
-          // sanitize img[srcset] values
+          // sanitize images[srcset] values
           var result = "";
 
           // first check if there are spaces because it's not the same pattern
@@ -30854,11 +30854,11 @@ function $$SanitizeUriProvider() {
   /**
    * @description
    * Retrieves or overrides the default regular expression that is used for whitelisting of safe
-   * urls during img[src] sanitization.
+   * urls during images[src] sanitization.
    *
    * The sanitization is a security measure aimed at prevent XSS attacks via html links.
    *
-   * Any url about to be assigned to img[src] via data-binding is first normalized and turned into
+   * Any url about to be assigned to images[src] via data-binding is first normalized and turned into
    * an absolute url. Afterwards, the url is matched against the `imgSrcSanitizationWhitelist`
    * regular expression. If a match is found, the original url is written into the dom. Otherwise,
    * the absolute url is prefixed with `'unsafe:'` string and only then is it written into the DOM.
@@ -34286,12 +34286,12 @@ var htmlAnchorDirective = valueFn({
  *
  * The buggy way to write it:
  * ```html
- * <img src="http://www.gravatar.com/avatar/{{hash}}" alt="Description"/>
+ * <images src="http://www.gravatar.com/avatar/{{hash}}" alt="Description"/>
  * ```
  *
  * The correct way to write it:
  * ```html
- * <img ng-src="http://www.gravatar.com/avatar/{{hash}}" alt="Description" />
+ * <images ng-src="http://www.gravatar.com/avatar/{{hash}}" alt="Description" />
  * ```
  *
  * @element IMG
@@ -34312,12 +34312,12 @@ var htmlAnchorDirective = valueFn({
  *
  * The buggy way to write it:
  * ```html
- * <img srcset="http://www.gravatar.com/avatar/{{hash}} 2x" alt="Description"/>
+ * <images srcset="http://www.gravatar.com/avatar/{{hash}} 2x" alt="Description"/>
  * ```
  *
  * The correct way to write it:
  * ```html
- * <img ng-srcset="http://www.gravatar.com/avatar/{{hash}} 2x" alt="Description" />
+ * <images ng-srcset="http://www.gravatar.com/avatar/{{hash}} 2x" alt="Description" />
  * ```
  *
  * @element IMG
@@ -48435,7 +48435,7 @@ var SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g,
 
 // Safe Void Elements - HTML5
 // http://dev.w3.org/html5/spec/Overview.html#void-elements
-var voidElements = toMap("area,br,col,hr,img,wbr");
+var voidElements = toMap("area,br,col,hr,images,wbr");
 
 // Elements that you can, intentionally, leave open (and which close themselves)
 // http://dev.w3.org/html5/spec/Overview.html#optional-tags
@@ -48452,7 +48452,7 @@ var blockElements = angular.extend({}, optionalEndTagBlockElements, toMap("addre
 
 // Inline Elements - HTML5
 var inlineElements = angular.extend({}, optionalEndTagInlineElements, toMap("a,abbr,acronym,b," +
-        "bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,q,ruby,rp,rt,s," +
+        "bdi,bdo,big,br,cite,code,del,dfn,em,font,i,images,ins,kbd,label,map,mark,q,ruby,rp,rt,s," +
         "samp,small,span,strike,strong,sub,sup,time,tt,u,var"));
 
 // SVG Elements
@@ -51899,7 +51899,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *   };
      * });
      * </pre>
-     * <img src='../ngdoc_assets/StateGoExamples.png'/>
+     * <images src='../ngdoc_assets/StateGoExamples.png'/>
      *
      * @param {string} to Absolute state name or relative state path. Some examples:
      *
@@ -62053,7 +62053,7 @@ IonicModule
  *
  * **Performance Tips**:
  *
- * - The iOS webview has a performance bottleneck when switching out `<img src>` attributes.
+ * - The iOS webview has a performance bottleneck when switching out `<images src>` attributes.
  *   To increase performance of images on iOS, cache your images in advance and,
  *   if possible, lower the number of unique images. We're working on [a solution](https://github.com/driftyco/ionic/issues/3194).
  *
@@ -62070,7 +62070,7 @@ IonicModule
  * #### Grid of Images ([codepen](http://codepen.io/ionic/pen/5515d4efd9d66f780e96787387f41664))
  * ```html
  * <ion-content>
- *   <img collection-repeat="photo in photos"
+ *   <images collection-repeat="photo in photos"
  *     item-width="33%"
  *     item-height="200px"
  *     ng-src="{% raw %}{{photo.url}}{% endraw %}">
@@ -62084,7 +62084,7 @@ IonicModule
  *   <ion-scroll direction="x" class="available-scroller">
  *     <div class="photo" collection-repeat="photo in main.photos"
  *        item-height="250" item-width="photo.width + 30">
- *        <img ng-src="{% raw %}{{photo.src}}{% endraw %}">
+ *        <images ng-src="{% raw %}{{photo.src}}{% endraw %}">
  *     </div>
  *   </ion-scroll>
  * </ion-content>
@@ -64473,7 +64473,7 @@ function keyboardAttachGetClientHeight(element) {
 *   <ion-item ng-repeat="item in items"
 *             class="item-thumbnail-left">
 *
-*     {% raw %}<img ng-src="{{item.img}}">
+*     {% raw %}<images ng-src="{{item.images}}">
 *     <h2>{{item.title}}</h2>
 *     <p>{{item.description}}</p>{% endraw %}
 *     <ion-option-button class="button-positive"
@@ -65120,7 +65120,7 @@ IonicModule
  * <ion-nav-view>
  *   <ion-view>
  *     <ion-nav-title>
- *       <img src="logo.svg">
+ *       <images src="logo.svg">
  *     </ion-nav-title>
  *     <ion-content>
  *       Some super content here!

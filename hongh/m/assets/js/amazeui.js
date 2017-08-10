@@ -899,7 +899,7 @@
 
             if (options.pureview) {
               if (options.pureview === 'auto') {
-                var zoomAble = $.isImgZoomAble($(item).find('img')[0]);
+                var zoomAble = $.isImgZoomAble($(item).find('images')[0]);
                 zoomAble && $(item).pureview();
               } else {
                 $(item).addClass('am-figure-zoomable').pureview();
@@ -1609,7 +1609,7 @@
 
               // 判断上传自定义的二维码没有，否则生成二维码
               if (qrImg) {
-                $qrContainer.html('<img src="' + qrImg + '"/>');
+                $qrContainer.html('<images src="' + qrImg + '"/>');
               } else {
                 var qrnode = new QRCode({
                   render: 'canvas',
@@ -4299,7 +4299,7 @@
                   for (var i = 0; i < slider.pagingCount; i++) {
                     slide = slider.slides.eq(i);
                     item = (slider.vars.controlNav === "thumbnails") ?
-                      '<img src="' + slide.attr('data-thumb') + '"/>' :
+                      '<images src="' + slide.attr('data-thumb') + '"/>' :
                       '<a>' + j + '</a>';
                     if ('thumbnails' === slider.vars.controlNav && true ===
                       slider.vars.thumbCaptions) {
@@ -4322,7 +4322,7 @@
 
                 methods.controlNav.active();
 
-                slider.controlNavScaffold.delegate('a, img', eventType,
+                slider.controlNavScaffold.delegate('a, images', eventType,
                   function(event) {
                     event.preventDefault();
 
@@ -5395,7 +5395,7 @@
 
           // Special properties
           controlsContainer: "", //{UPDATED} jQuery Object/Selector: Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be $(".flexslider-container"). Property is ignored if given element is not found.
-          manualControls: "", //{UPDATED} jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+          manualControls: "", //{UPDATED} jQuery Object/Selector: Declare custom control navigation. Examples would be $(".flex-control-nav li") or "#tabs-nav li images", etc. The number of elements in your controlNav should match the number of slides/tabs.
           sync: "", //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
           asNavFor: "", //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
 
@@ -7586,7 +7586,7 @@
               detectGestures(this.container.get(0), this);
               // Zepto and jQuery both know about `on`
               $(window).on('resize', this.update.bind(this));
-              $(this.el).find('img').on('load', this.update.bind(this));
+              $(this.el).find('images').on('load', this.update.bind(this));
             },
 
             /**
@@ -8605,7 +8605,7 @@
           // press to toggle Toolbar
           toggleToolbar: true,
 
-          // 从何处获取图片，img 可以使用 data-rel 指定大图
+          // 从何处获取图片，images 可以使用 data-rel 指定大图
           target: 'img',
 
           // 微信 Webview 中调用微信的图片浏览器
@@ -8754,7 +8754,7 @@
               src = item.href; // to absolute path
               title = item.title || '';
             } else {
-              src = $(item).data('rel') || item.src; // <img src='' data-rel='' />
+              src = $(item).data('rel') || item.src; // <images src='' data-rel='' />
               title = $(item).attr('alt') || '';
             }
 
@@ -8783,7 +8783,7 @@
           var appendedFlag = 'image-appended';
 
           if (!$slide.data(appendedFlag)) {
-            var $img = $('<img>', {
+            var $img = $('<images>', {
               src: $slide.data('src'),
               alt: $slide.data('title')
             });
