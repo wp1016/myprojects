@@ -4,7 +4,7 @@
       <swiper :options="swiperOption"  ref="mySwiper">
         <!-- 这部分放你要渲染的那些内容 -->
         <swiper-slide v-for="item in items">
-          <img src="../../images/banner1.png" width="100%" alt="">
+          <img :src="item.src" alt="" width="100%">
         </swiper-slide>
         <!-- 这是轮播的小圆点 -->
         <div class="swiper-pagination" slot="pagination"></div>
@@ -111,9 +111,9 @@
           }
         },
         items:[
-          {src:'images/banner1.png'},
-          {src:'images/banner1.png'},
-          {src:'images/banner1.png'}
+          {src:require('images/banner1.png')},
+          {src:require('images/banner1.png')},
+          {src:require('images/banner1.png')}
         ]
       }
     },
