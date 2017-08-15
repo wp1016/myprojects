@@ -3236,7 +3236,7 @@
         var currentItem = _cloneObject(this._options.steps[i]);
         //set the step
         currentItem.step = introItems.length + 1;
-        //use querySelector function only when developer used CSS selector
+        //use querySelector function only when developer used css selector
         if (typeof(currentItem.element) === 'string') {
           //grab the element with given selector from the page
           currentItem.element = document.querySelector(currentItem.element);
@@ -3917,7 +3917,7 @@
   }
 
   /**
-   * Get an element CSS property on the page
+   * Get an element css property on the page
    * Thanks to JavaScript Kit: http://www.javascriptkit.com/dhtmltutors/dhtmlcascade4.shtml
    *
    * @api private
@@ -4117,7 +4117,7 @@
       doneLabel: '知道了',
       /* Default tooltip box position */
       tooltipPosition: 'bottom',
-      /* Next CSS class for tooltip boxes */
+      /* Next css class for tooltip boxes */
       tooltipClass: '',
       /* Close introduction when pressing Escape button? */
       exitOnEsc: true,
@@ -6388,7 +6388,7 @@ require('./template')
   "use strict";
 
 
-  /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)
+  /* css TRANSITION SUPPORT (http://www.modernizr.com/)
    * ======================================================= */
 
   $(function () {

@@ -10,7 +10,7 @@
 +function ($) {
   'use strict';
 
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+  // css TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================
 
   function transitionEnd() {

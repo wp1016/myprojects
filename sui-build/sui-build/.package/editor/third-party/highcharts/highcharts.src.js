@@ -327,7 +327,7 @@ function pick() {
 }
 
 /**
- * Set CSS on a given element
+ * Set css on a given element
  * @param {Object} el
  * @param {Object} styles Style object with camel case property names
  */
@@ -2490,7 +2490,7 @@ SVGElement.prototype = {
 	},
 
 	/**
-	 * Apply CSS to HTML elements. This is used in text within SVG rendering and
+	 * Apply css to HTML elements. This is used in text within SVG rendering and
 	 * by the VML renderer
 	 */
 	htmlCss: function (styles) {
@@ -4776,7 +4776,7 @@ Highcharts.VMLElement = VMLElement = {
 							}
 						}
 
-						// Instead of toggling the visibility CSS property, move the div out of the viewport.
+						// Instead of toggling the visibility css property, move the div out of the viewport.
 						// This works around #61 and #586
 						if (nodeName === 'DIV') {
 							value = value === HIDDEN ? '-999em' : 0;
@@ -5118,7 +5118,7 @@ var VMLRendererExtension = { // inherit SVGRenderer
 
 			doc.namespaces.add('hcv', 'urn:schemas-microsoft-com:vml');
 
-			// Setup default CSS (#2153)
+			// Setup default css (#2153)
 			(doc.styleSheets.length ? doc.styleSheets[0] : doc.createStyleSheet()).cssText +=
 				'hcv\\:fill, hcv\\:path, hcv\\:shape, hcv\\:stroke' +
 				'{ behavior:url(#default#VML); display: inline-block; } ';
@@ -5137,7 +5137,7 @@ var VMLRendererExtension = { // inherit SVGRenderer
 
 	/**
 	 * Define a clipping rectangle. In VML it is accomplished by storing the values
-	 * for setting the CSS style to all associated members.
+	 * for setting the css style to all associated members.
 	 *
 	 * @param {Number} x
 	 * @param {Number} y
@@ -5442,7 +5442,7 @@ var VMLRendererExtension = { // inherit SVGRenderer
 	/**
 	 * Create a group using an outer div and an inner v:group to allow rotating
 	 * and flipping. A simple v:group would have problems with positioning
-	 * child HTML elements and CSS clip.
+	 * child HTML elements and css clip.
 	 *
 	 * @param {String} name The name of the group
 	 */
@@ -5704,7 +5704,7 @@ if (useCanVG) {
 	 * together with the canvg library.
 	 */
 	Highcharts.CanVGRenderer = CanVGRenderer = function () {
-		// Override the global SVG namespace to fake SVG/HTML that accepts CSS
+		// Override the global SVG namespace to fake SVG/HTML that accepts css
 		SVG_NS = 'http://www.w3.org/1999/xhtml';
 	};
 
@@ -5823,7 +5823,7 @@ Tick.prototype = {
 			value: axis.isLog ? correctFloat(lin2log(value)) : value
 		});
 
-		// prepare CSS
+		// prepare css
 		css = width && { width: mathMax(1, mathRound(width - 2 * (labelOptions.padding || 10))) + PX };
 		css = extend(css, labelOptions.style);
 

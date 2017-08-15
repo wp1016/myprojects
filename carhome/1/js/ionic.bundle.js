@@ -18522,14 +18522,14 @@ var $AnimateProvider = ['$provide', function($provide) {
    * @name $animateProvider#classNameFilter
    *
    * @description
-   * Sets and/or returns the CSS class regular expression that is checked when performing
+   * Sets and/or returns the css class regular expression that is checked when performing
    * an animation. Upon bootstrap the classNameFilter value is not set at all and will
    * therefore enable $animate to attempt to perform an animation on any element that is triggered.
    * When setting the `classNameFilter` value, animations will only be performed on elements
    * that successfully match the filter expression. This in turn can boost performance
    * for low-powered devices as well as applications containing a lot of structural operations.
    * @param {RegExp=} expression The className expression which will be checked against all animations
-   * @return {RegExp} The current CSS className expression value. If null then there is no expression value
+   * @return {RegExp} The current css className expression value. If null then there is no expression value
    */
   this.classNameFilter = function(expression) {
     if (arguments.length === 1) {
@@ -18773,15 +18773,15 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#addClass
        * @kind function
        *
-       * @description Triggers an addClass animation surrounding the addition of the provided CSS class(es). Upon
+       * @description Triggers an addClass animation surrounding the addition of the provided css class(es). Upon
        *   execution, the addClass operation will only be handled after the next digest and it will not trigger an
-       *   animation if element already contains the CSS class or if the class is removed at a later step.
+       *   animation if element already contains the css class or if the class is removed at a later step.
        *   Note that class-based animations are treated differently compared to structural animations
-       *   (like enter, move and leave) since the CSS classes may be added/removed at different points
-       *   depending if CSS or JavaScript animations are used.
+       *   (like enter, move and leave) since the css classes may be added/removed at different points
+       *   depending if css or JavaScript animations are used.
        *
-       * @param {DOMElement} element the element which the CSS classes will be applied to
-       * @param {string} className the CSS class(es) that will be added (multiple classes are separated via spaces)
+       * @param {DOMElement} element the element which the css classes will be applied to
+       * @param {string} className the css class(es) that will be added (multiple classes are separated via spaces)
        * @param {object=} options an optional collection of options/styles that will be applied to the element
        *
        * @return {Promise} the animation callback promise
@@ -18797,15 +18797,15 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#removeClass
        * @kind function
        *
-       * @description Triggers a removeClass animation surrounding the removal of the provided CSS class(es). Upon
+       * @description Triggers a removeClass animation surrounding the removal of the provided css class(es). Upon
        *   execution, the removeClass operation will only be handled after the next digest and it will not trigger an
-       *   animation if element does not contain the CSS class or if the class is added at a later step.
+       *   animation if element does not contain the css class or if the class is added at a later step.
        *   Note that class-based animations are treated differently compared to structural animations
-       *   (like enter, move and leave) since the CSS classes may be added/removed at different points
-       *   depending if CSS or JavaScript animations are used.
+       *   (like enter, move and leave) since the css classes may be added/removed at different points
+       *   depending if css or JavaScript animations are used.
        *
-       * @param {DOMElement} element the element which the CSS classes will be applied to
-       * @param {string} className the CSS class(es) that will be removed (multiple classes are separated via spaces)
+       * @param {DOMElement} element the element which the css classes will be applied to
+       * @param {string} className the css class(es) that will be removed (multiple classes are separated via spaces)
        * @param {object=} options an optional collection of options/styles that will be applied to the element
        *
        * @return {Promise} the animation callback promise
@@ -18821,16 +18821,16 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#setClass
        * @kind function
        *
-       * @description Performs both the addition and removal of a CSS classes on an element and (during the process)
+       * @description Performs both the addition and removal of a css classes on an element and (during the process)
        *    triggers an animation surrounding the class addition/removal. Much like `$animate.addClass` and
        *    `$animate.removeClass`, `setClass` will only evaluate the classes being added/removed once a digest has
        *    passed. Note that class-based animations are treated differently compared to structural animations
-       *    (like enter, move and leave) since the CSS classes may be added/removed at different points
-       *    depending if CSS or JavaScript animations are used.
+       *    (like enter, move and leave) since the css classes may be added/removed at different points
+       *    depending if css or JavaScript animations are used.
        *
-       * @param {DOMElement} element the element which the CSS classes will be applied to
-       * @param {string} add the CSS class(es) that will be added (multiple classes are separated via spaces)
-       * @param {string} remove the CSS class(es) that will be removed (multiple classes are separated via spaces)
+       * @param {DOMElement} element the element which the css classes will be applied to
+       * @param {string} add the css class(es) that will be added (multiple classes are separated via spaces)
+       * @param {string} remove the css class(es) that will be removed (multiple classes are separated via spaces)
        * @param {object=} options an optional collection of options/styles that will be applied to the element
        *
        * @return {Promise} the animation callback promise
@@ -18847,10 +18847,10 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @name $animate#animate
        * @kind function
        *
-       * @description Performs an inline animation on the element which applies the provided to and from CSS styles to the element.
-       * If any detected CSS transition, keyframe or JavaScript matches the provided className value, then the animation will take
+       * @description Performs an inline animation on the element which applies the provided to and from css styles to the element.
+       * If any detected css transition, keyframe or JavaScript matches the provided className value, then the animation will take
        * on the provided styles. For example, if a transition animation is set for the given classNamem, then the provided `from` and
-       * `to` styles will be applied alongside the given transition. If the CSS style provided in `from` does not have a corresponding
+       * `to` styles will be applied alongside the given transition. If the css style provided in `from` does not have a corresponding
        * style in `to`, the style in `from` is applied immediately, and no animation is run.
        * If a JavaScript animation is detected then the provided styles will be given in as function parameters into the `animate`
        * method (or as part of the `options` parameter):
@@ -18866,11 +18866,11 @@ var $AnimateProvider = ['$provide', function($provide) {
        * });
        * ```
        *
-       * @param {DOMElement} element the element which the CSS styles will be applied to
-       * @param {object} from the from (starting) CSS styles that will be applied to the element and across the animation.
-       * @param {object} to the to (destination) CSS styles that will be applied to the element and across the animation.
-       * @param {string=} className an optional CSS class that will be applied to the element for the duration of the animation. If
-       *    this value is left as empty then a CSS class of `ng-inline-animate` will be applied to the element.
+       * @param {DOMElement} element the element which the css styles will be applied to
+       * @param {object} from the from (starting) css styles that will be applied to the element and across the animation.
+       * @param {object} to the to (destination) css styles that will be applied to the element and across the animation.
+       * @param {string=} className an optional css class that will be applied to the element for the duration of the animation. If
+       *    this value is left as empty then a css class of `ng-inline-animate` will be applied to the element.
        *    (Note that if no animation is detected then this value will not be applied to the element.)
        * @param {object=} options an optional collection of options/styles that will be applied to the element
        *
@@ -21269,11 +21269,11 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
        * @kind function
        *
        * @description
-       * Adds and removes the appropriate CSS class values to the element based on the difference
-       * between the new and old CSS class values (specified as newClasses and oldClasses).
+       * Adds and removes the appropriate css class values to the element based on the difference
+       * between the new and old css class values (specified as newClasses and oldClasses).
        *
-       * @param {string} newClasses The current CSS className value
-       * @param {string} oldClasses The former CSS className value
+       * @param {string} newClasses The current css className value
+       * @param {string} oldClasses The former css className value
        */
       $updateClass: function(newClasses, oldClasses) {
         var toAdd = tokenDifference(newClasses, oldClasses);
@@ -31805,10 +31805,10 @@ function $SceProvider() {
      *
      * @description
      * Shorthand method.  `$sce.getTrustedCss(value)` →
-     *     {@link ng.$sceDelegate#getTrusted `$sceDelegate.getTrusted($sce.CSS, value)`}
+     *     {@link ng.$sceDelegate#getTrusted `$sceDelegate.getTrusted($sce.css, value)`}
      *
      * @param {*} value The value to pass to `$sce.getTrusted`.
-     * @returns {*} The return value of `$sce.getTrusted($sce.CSS, value)`
+     * @returns {*} The return value of `$sce.getTrusted($sce.css, value)`
      */
 
     /**
@@ -31962,8 +31962,8 @@ function $SceProvider() {
  * @requires $document
  *
  * @property {boolean} history Does the browser support html5 history api ?
- * @property {boolean} transitions Does the browser support CSS transition events ?
- * @property {boolean} animations Does the browser support CSS animation events ?
+ * @property {boolean} transitions Does the browser support css transition events ?
+ * @property {boolean} animations Does the browser support css animation events ?
  *
  * @description
  * This is very simple implementation of testing browser's features.
@@ -44629,12 +44629,12 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * @kind object
  *
  * @description
- * The `$animateCss` service is a useful utility to trigger customized CSS-based transitions/keyframes
+ * The `$animateCss` service is a useful utility to trigger customized css-based transitions/keyframes
  * from a JavaScript-based animation or directly from a directive. The purpose of `$animateCss` is NOT
  * to side-step how `$animate` and ngAnimate work, but the goal is to allow pre-existing animations or
- * directives to create more complex animations that can be purely driven using CSS code.
+ * directives to create more complex animations that can be purely driven using css code.
  *
- * Note that only browsers that support CSS transitions and/or keyframe animations are capable of
+ * Note that only browsers that support css transitions and/or keyframe animations are capable of
  * rendering animations triggered via `$animateCss` (bad news for IE9 and lower).
  *
  * ## Usage
@@ -44643,19 +44643,19 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * any automatic control over cancelling animations and/or preventing animations from being run on
  * child elements will not be handled by Angular. For this to work as expected, please use `$animate` to
  * trigger the animation and then setup a JavaScript animation that injects `$animateCss` to trigger
- * the CSS animation.
+ * the css animation.
  *
  * The example below shows how we can create a folding animation on an element using `ng-if`:
  *
  * ```html
- * <!-- notice the `fold-animation` CSS class -->
+ * <!-- notice the `fold-animation` css class -->
  * <div ng-if="onOff" class="fold-animation">
  *   This element will go BOOM
  * </div>
  * <button ng-click="onOff=true">Fold In</button>
  * ```
  *
- * Now we create the **JavaScript animation** that will trigger the CSS transition:
+ * Now we create the **JavaScript animation** that will trigger the css transition:
  *
  * ```js
  * ngModule.animation('.fold-animation', ['$animateCss', function($animateCss) {
@@ -44674,13 +44674,13 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  *
  * ## More Advanced Uses
  *
- * `$animateCss` is the underlying code that ngAnimate uses to power **CSS-based animations** behind the scenes. Therefore CSS hooks
+ * `$animateCss` is the underlying code that ngAnimate uses to power **css-based animations** behind the scenes. Therefore css hooks
  * like `.ng-EVENT`, `.ng-EVENT-active`, `.ng-EVENT-stagger` are all features that can be triggered using `$animateCss` via JavaScript code.
  *
  * This also means that just about any combination of adding classes, removing classes, setting styles, dynamically setting a keyframe animation,
  * applying a hardcoded duration or delay value, changing the animation easing or applying a stagger animation are all options that work with
  * `$animateCss`. The service itself is smart enough to figure out the combination of options and examine the element styling properties in order
- * to provide a working animation that will run in CSS.
+ * to provide a working animation that will run in css.
  *
  * The example below showcases a more advanced version of the `.fold-animation` from the example above:
  *
@@ -44701,11 +44701,11 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * }]);
  * ```
  *
- * Since we're adding/removing CSS classes then the CSS transition will also pick those up:
+ * Since we're adding/removing css classes then the css transition will also pick those up:
  *
  * ```css
  * /&#42; since a hardcoded duration value of 1 was provided in the JavaScript animation code,
- * the CSS classes below will be transitioned despite them being defined as regular CSS classes &#42;/
+ * the css classes below will be transitioned despite them being defined as regular css classes &#42;/
  * .red { background:red; }
  * .large-text { font-size:20px; }
  *
@@ -44726,7 +44726,7 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * }
  * ```
  *
- * Given this complex combination of CSS classes, styles and options, `$animateCss` will figure everything out and make the animation happen.
+ * Given this complex combination of css classes, styles and options, `$animateCss` will figure everything out and make the animation happen.
  *
  * ## How the Options are handled
  *
@@ -44759,16 +44759,16 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * }
  * ```
  *
- * The missing pieces here are that we do not have a transition set (within the CSS code nor within the `$animateCss` options) and the duration of the animation is
- * going to be detected from what the keyframe styles on the CSS class are. In this event, `$animateCss` will automatically create an inline transition
- * style matching the duration detected from the keyframe style (which is present in the CSS class that is being added) and then prepare both the transition
- * and keyframe animations to run in parallel on the element. Then when the animation is underway the provided `from` and `to` CSS styles will be applied
+ * The missing pieces here are that we do not have a transition set (within the css code nor within the `$animateCss` options) and the duration of the animation is
+ * going to be detected from what the keyframe styles on the css class are. In this event, `$animateCss` will automatically create an inline transition
+ * style matching the duration detected from the keyframe style (which is present in the css class that is being added) and then prepare both the transition
+ * and keyframe animations to run in parallel on the element. Then when the animation is underway the provided `from` and `to` css styles will be applied
  * and spread across the transition and keyframe animation.
  *
  * ## What is returned
  *
  * `$animateCss` works in two stages: a preparation phase and an animation phase. Therefore when `$animateCss` is first called it will NOT actually
- * start the animation. All that is going on here is that the element is being prepared for the animation (which means that the generated CSS classes are
+ * start the animation. All that is going on here is that the element is being prepared for the animation (which means that the generated css classes are
  * added and removed on the element). Once `$animateCss` is called it will return an object with the following properties:
  *
  * ```js
@@ -44788,7 +44788,7 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * ```
  *
  * To actually start the animation we need to run `animation.start()` which will then return a promise that we can hook into to detect when the animation ends.
- * If we choose not to run the animation then we MUST run `animation.end()` to perform a cleanup on the element (since some CSS classes and styles may have been
+ * If we choose not to run the animation then we MUST run `animation.end()` to perform a cleanup on the element (since some css classes and styles may have been
  * applied to the element during the preparation phase). Note that all other properties such as duration, delay, transitions and keyframes are just properties
  * and that changing them will not reconfigure the parameters of the animation.
  *
@@ -44805,28 +44805,28 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * @param {DOMElement} element the element that will be animated
  * @param {object} options the animation-related options that will be applied during the animation
  *
- * * `event` - The DOM event (e.g. enter, leave, move). When used, a generated CSS class of `ng-EVENT` and `ng-EVENT-active` will be applied
+ * * `event` - The DOM event (e.g. enter, leave, move). When used, a generated css class of `ng-EVENT` and `ng-EVENT-active` will be applied
  * to the element during the animation. Multiple events can be provided when spaces are used as a separator. (Note that this will not perform any DOM operation.)
  * * `structural` - Indicates that the `ng-` prefix will be added to the event class. Setting to `false` or omitting will turn `ng-EVENT` and
  * `ng-EVENT-active` in `EVENT` and `EVENT-active`. Unused if `event` is omitted.
- * * `easing` - The CSS easing value that will be applied to the transition or keyframe animation (or both).
- * * `transitionStyle` - The raw CSS transition style that will be used (e.g. `1s linear all`).
- * * `keyframeStyle` - The raw CSS keyframe animation style that will be used (e.g. `1s my_animation linear`).
- * * `from` - The starting CSS styles (a key/value object) that will be applied at the start of the animation.
- * * `to` - The ending CSS styles (a key/value object) that will be applied across the animation via a CSS transition.
- * * `addClass` - A space separated list of CSS classes that will be added to the element and spread across the animation.
- * * `removeClass` - A space separated list of CSS classes that will be removed from the element and spread across the animation.
+ * * `easing` - The css easing value that will be applied to the transition or keyframe animation (or both).
+ * * `transitionStyle` - The raw css transition style that will be used (e.g. `1s linear all`).
+ * * `keyframeStyle` - The raw css keyframe animation style that will be used (e.g. `1s my_animation linear`).
+ * * `from` - The starting css styles (a key/value object) that will be applied at the start of the animation.
+ * * `to` - The ending css styles (a key/value object) that will be applied across the animation via a css transition.
+ * * `addClass` - A space separated list of css classes that will be added to the element and spread across the animation.
+ * * `removeClass` - A space separated list of css classes that will be removed from the element and spread across the animation.
  * * `duration` - A number value representing the total duration of the transition and/or keyframe (note that a value of 1 is 1000ms). If a value of `0`
  * is provided then the animation will be skipped entirely.
  * * `delay` - A number value representing the total delay of the transition and/or keyframe (note that a value of 1 is 1000ms). If a value of `true` is
- * used then whatever delay value is detected from the CSS classes will be mirrored on the elements styles (e.g. by setting delay true then the style value
- * of the element will be `transition-delay: DETECTED_VALUE`). Using `true` is useful when you want the CSS classes and inline styles to all share the same
- * CSS delay value.
+ * used then whatever delay value is detected from the css classes will be mirrored on the elements styles (e.g. by setting delay true then the style value
+ * of the element will be `transition-delay: DETECTED_VALUE`). Using `true` is useful when you want the css classes and inline styles to all share the same
+ * css delay value.
  * * `stagger` - A numeric time value representing the delay between successively animated elements
- * ({@link ngAnimate#css-staggering-animations Click here to learn how CSS-based staggering works in ngAnimate.})
+ * ({@link ngAnimate#css-staggering-animations Click here to learn how css-based staggering works in ngAnimate.})
  * * `staggerIndex` - The numeric index representing the stagger item (e.g. a value of 5 is equal to the sixth item in the stagger; therefore when a
  *   `stagger` option value of `0.1` is used then there will be a stagger delay of `600ms`)
- * * `applyClassesEarly` - Whether or not the classes being added or removed will be used when detecting the animation. This is set by `$animate` when enter/leave/move animations are fired to ensure that the CSS classes are resolved in time. (Note that this will prevent any transitions from occurring on the classes being added and removed.)
+ * * `applyClassesEarly` - Whether or not the classes being added or removed will be used when detecting the animation. This is set by `$animate` when enter/leave/move animations are fired to ensure that the css classes are resolved in time. (Note that this will prevent any transitions from occurring on the classes being added and removed.)
  * * `cleanupStyles` - Whether or not the provided `from` and `to` styles will be removed once
  *    the animation is closed. This is useful for when the styles are used purely for the sake of
  *    the animation and do not have a lasting visual effect on the element (e.g. a collapse and open animation).
@@ -44835,7 +44835,7 @@ var ANIMATE_TIMER_KEY = '$$animateCss';
  * @return {object} an object with start and end methods and details about the animation.
  *
  * * `start` - The method to start the animation. This will return a `Promise` when called.
- * * `end` - This method will cancel the animation and remove all applied CSS classes and styles.
+ * * `end` - This method will cancel the animation and remove all applied css classes and styles.
  */
 var ONE_SECOND = 1000;
 var BASE_TEN = 10;
@@ -47109,7 +47109,7 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
             fn: function triggerAnimationStart() {
               // it's important that we apply the `ng-animate` CSS class and the
               // temporary classes before we do any driver invoking since these
-              // CSS classes may be required for proper CSS detection.
+              // css classes may be required for proper css detection.
               animationEntry.beforeStart();
 
               var startAnimationFn, closeFn = animationEntry.close;
@@ -66805,7 +66805,7 @@ function($animate, $timeout, $compile) {
  * </table>
  *
  * Each spinner uses SVG with SMIL animations, however, the Android spinner also uses JavaScript
- * so it also works on Android 4.0-4.3. Additionally, each spinner can be styled with CSS,
+ * so it also works on Android 4.0-4.3. Additionally, each spinner can be styled with css,
  * and scaled to any size.
  *
  *
@@ -66833,8 +66833,8 @@ function($animate, $timeout, $compile) {
  * ```
  *
  *
- * ## Styling SVG with CSS
- * One cool thing about SVG is its ability to be styled with CSS! Some of the properties
+ * ## Styling SVG with css
+ * One cool thing about SVG is its ability to be styled with css! Some of the properties
  * have different names, for example, SVG uses the term `stroke` instead of `border`, and
  * `fill` instead of `background-color`.
  *
@@ -67304,11 +67304,11 @@ IonicModule
  *
  * The toggle behaves like any [AngularJS checkbox](http://docs.angularjs.org/api/ng/input/input[checkbox]) otherwise.
  *
- * @param toggle-class {string=} Sets the CSS class on the inner `label.toggle` element created by the directive.
+ * @param toggle-class {string=} Sets the css class on the inner `label.toggle` element created by the directive.
  *
  * @usage
  * Below is an example of a toggle directive which is wired up to the `airplaneMode` model
- * and has the `toggle-calm` CSS class assigned to the inner element.
+ * and has the `toggle-calm` css class assigned to the inner element.
  *
  * ```html
  * <ion-toggle ng-model="airplaneMode" toggle-class="toggle-calm">Airplane Mode</ion-toggle>

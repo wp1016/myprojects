@@ -2,7 +2,7 @@ define([
   'jquery',
   './utils'
 ], function ($, CompatUtils) {
-  // No-op CSS adapter that discards all classes by default
+  // No-op css adapter that discards all classes by default
   function _dropdownAdapter (clazz) {
     return null;
   }

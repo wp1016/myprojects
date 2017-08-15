@@ -1,5 +1,5 @@
 ﻿@charset "utf-8";
-/* CSS Document */
+/* css Document */
 <!--织梦58（dede58.com）做最好的织梦整站模板下载网站-->
 /*Reset Css*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, abbr, del, dfn, em, img, ins, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, object, col, colgroup, caption, summary, tbody, tfoot, thead, th { margin: 0; padding: 0; border: 0; line-height: 23px; }
@@ -79,7 +79,7 @@ header#header { padding: 0px 0 0px 0; width: 100%; background: #FFF; float: left
 
 
 /*--------------------------------------------------------------------------------------*/
-/*                     4 - HEADER CSS STYLES                                           */
+/*                     4 - HEADER css STYLES                                           */
 /*-------------------------------------------------------------------------------------*/
 /*main navigation*/
 
@@ -381,7 +381,7 @@ LI.feilei5 { WIDTH: 220px; BACKGROUND: none transparent scroll repeat 0% 0%; }
         .footer_phone a span { color: #FFF; font-size: 20px; display: inline-block; height: 40px; line-height: 40px; color: #FFF; padding-left: 36px; background: url(../images/tel2.png) left no-repeat; }
 .noswap { display:none;}
 
-/*CSS megas512 style pagination*/
+/*css megas512 style pagination*/
 
 DIV.megas512 {
 	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center

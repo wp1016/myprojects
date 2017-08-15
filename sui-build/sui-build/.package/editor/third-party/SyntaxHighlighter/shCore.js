@@ -1028,9 +1028,9 @@ if (typeof(SyntaxHighlighter) == 'undefined') var SyntaxHighlighter = function()
     }; // end of sh
 
     /**
-     * Checks if target DOM elements has specified CSS class.
+     * Checks if target DOM elements has specified css class.
      * @param {DOMElement} target Target DOM element to check.
-     * @param {String} className Name of the CSS class to check for.
+     * @param {String} className Name of the css class to check for.
      * @return {Boolean} Returns true if class name is present, false otherwise.
      */
     function hasClass(target, className)
@@ -1039,9 +1039,9 @@ if (typeof(SyntaxHighlighter) == 'undefined') var SyntaxHighlighter = function()
     };
 
     /**
-     * Adds CSS class name to the target DOM element.
+     * Adds css class name to the target DOM element.
      * @param {DOMElement} target Target DOM element.
-     * @param {String} className New CSS class to add.
+     * @param {String} className New css class to add.
      */
     function addClass(target, className)
     {
@@ -1050,9 +1050,9 @@ if (typeof(SyntaxHighlighter) == 'undefined') var SyntaxHighlighter = function()
     };
 
     /**
-     * Removes CSS class name from the target DOM element.
+     * Removes css class name from the target DOM element.
      * @param {DOMElement} target Target DOM element.
-     * @param {String} className CSS class to remove.
+     * @param {String} className css class to remove.
      */
     function removeClass(target, className)
     {

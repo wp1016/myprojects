@@ -3938,7 +3938,7 @@ jQuery.each( ("blur focus focusin focusout load resize scroll unload click dblcl
 
 
 /*!
- * Sizzle CSS Selector Engine
+ * Sizzle css Selector Engine
  *  Copyright 2011, The Dojo Foundation
  *  Released under the MIT, BSD, and GPL Licenses.
  *  More information: http://sizzlejs.com/
@@ -6644,7 +6644,7 @@ jQuery.extend({
 				return;
 			}
 
-			// If a number was passed in, add 'px' to the (except for certain CSS properties)
+			// If a number was passed in, add 'px' to the (except for certain css properties)
 			if ( type === "number" && !jQuery.cssNumber[ origName ] ) {
 				value += "px";
 			}
@@ -6692,7 +6692,7 @@ jQuery.extend({
 		}
 	},
 
-	// A method for quickly swapping in/out CSS properties to get correct calculations
+	// A method for quickly swapping in/out css properties to get correct calculations
 	swap: function( elem, options, callback ) {
 		var old = {},
 			ret, name;

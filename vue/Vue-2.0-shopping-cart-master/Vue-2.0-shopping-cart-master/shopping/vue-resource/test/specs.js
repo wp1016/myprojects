@@ -5253,7 +5253,7 @@ function createPatchFunction (backend) {
     }
   }
 
-  // set scope id attribute for scoped CSS.
+  // set scope id attribute for scoped css.
   // this is implemented as a special case to avoid the overhead
   // of going through the normal attribute patching process.
   function setScope (vnode) {
@@ -7240,7 +7240,7 @@ var TransitionGroup = {
         return this._hasMove
       }
       // Detect whether an element with the move class applied has
-      // CSS transitions. Since the element may be inside an entering
+      // css transitions. Since the element may be inside an entering
       // transition at this very moment, we make a clone of it and remove
       // all other transition classes applied to ensure only the move class
       // is applied.
