@@ -1,6 +1,7 @@
 <template>
   <div class="page main">
     <div class="content">
+<<<<<<< HEAD
       <swiper :options="swiperOption"  ref="mySwiper">
         <!-- 这部分放你要渲染的那些内容 -->
         <swiper-slide v-for="item in items">
@@ -9,6 +10,16 @@
         <!-- 这是轮播的小圆点 -->
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
+=======
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../images/banner1.png" width="100%" alt=""></div>
+          <div class="swiper-slide"><img src="../../images/banner1.png" width="100%" alt=""></div>
+          <div class="swiper-slide"><img src="../../images/banner1.png" width="100%" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+>>>>>>> 1487371c0b76b0751ce3f3403b025aae16403a8b
       <div class="grid-demo">
         <div class="row">
           <div class="col-33">
@@ -88,6 +99,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
   import '@/style/swiper.min.css'
   export default {
@@ -125,6 +137,21 @@
     mounted () {
       //这边就可以使用swiper这个对象去使用swiper官网中的那些方法
       this.swiper.slideTo(0, 0, false);
+=======
+  import '@/plugins/zepto.min.js'
+  import '@/plugins/sm.min.js'
+  import '@/plugins/swiper-3.4.2.jquery.min.js'
+  import '@/style/swiper.min.css'
+  export default {
+    mounted(){
+      new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        autoplay:5000,
+        autoplayDisableOnInteraction:false,
+        loop: true
+      });
+>>>>>>> 1487371c0b76b0751ce3f3403b025aae16403a8b
     }
   }
 </script>

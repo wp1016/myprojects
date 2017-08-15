@@ -7,8 +7,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   import 'plugins/zepto.min.js'
   import 'plugins/sm.min.js'
+=======
+>>>>>>> 1487371c0b76b0751ce3f3403b025aae16403a8b
 export default {
 }
 </script>

@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import routes from './router'
+<<<<<<< HEAD
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 Vue.use(VueAwesomeSwiper);
+=======
+
+>>>>>>> 1487371c0b76b0751ce3f3403b025aae16403a8b
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 const router=new VueRouter({
