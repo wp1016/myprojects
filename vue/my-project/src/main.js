@@ -6,6 +6,7 @@ import routes from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 Vue.use(VueAwesomeSwiper);
+
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 const router=new VueRouter({

@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "vue": "^2.3.3",
+<<<<<<< HEAD
     "vue-awesome-swiper": "^2.6.2",
+=======
+>>>>>>> 1487371c0b76b0751ce3f3403b025aae16403a8b
     "vue-router": "^2.6.0"
   },
   "devDependencies": {
