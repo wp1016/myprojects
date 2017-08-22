@@ -33,6 +33,5 @@ module.exports = merge(baseWebpackConfig, {
             favicon: 'favicon.ico',
             inject: true
         })
-
     ]
 })
