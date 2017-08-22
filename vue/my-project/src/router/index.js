@@ -1,31 +1,15 @@
-import App from '@/App'
+import Vue from 'vue'
+import Router from 'vue-router'
+import Hello from '@/components/Hello'
 
-const login=r=>require.ensure([],()=>r(require('@/pages/login/login')),'login')
-const home = r => require.ensure([], () => r(require('@/pages/home/home')), 'home')
-const detail = r => require.ensure([], () => r(require('@/pages/detail/detail')), 'detail')
+Vue.use(Router)
 
-
-export default[
-  {
-    path:'/',
-    component:App,//顶层路由
-    children:[
-      {
-        path:'',
-        redirect:'/login'
-      },
-      {
-        path:'/home',
-        component:home
-      },
-      {
-        path:'/detail',
-        component:detail
-      },
-      {
-        path:'/login',
-        component:login
-      }
-    ]
-  }
-]
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Hello',
+      component: Hello
+    }
+  ]
+})

@@ -1,31 +1,23 @@
 <template>
-  <div class="page-group">
-    <transition name="router-fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import 'plugins/zepto.min.js'
-  import 'plugins/sm.min.js'
 export default {
+  name: 'app'
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "style/sm.min.css";
-  .page{ display:block;}
-  .router-fade-enter-active, .router-fade-leave-active {
-    transition: opacity .3s;
-  }
-  .router-fade-enter, .router-fade-leave-active {
-    opacity: 0;
-  }
-  .swiper-container{
-    padding-bottom:0;
-  }
-  .swiper-container-horizontal > .swiper-pagination{
-    bottom:.3rem;
-  }
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
