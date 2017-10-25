@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
@@ -7,11 +7,11 @@
 
 <script>
 export default {
-  name: 'app'
+
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
